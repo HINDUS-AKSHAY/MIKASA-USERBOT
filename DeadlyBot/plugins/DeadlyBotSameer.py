@@ -7,7 +7,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from Deadlybot.utils import deadly_cmd, edit_or_reply, sudo_cmd
 DEFAULTUSER = Config.YOUR_NAME
 
-deadlybot = bot.uid
+DeadlyBot = bot.uid
 
 
 bots = "@MissRose_bot"
@@ -24,7 +24,7 @@ if G_BAN_LOGGER_GROUP:
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"Starting superfban By [{DEFAULTUSER}](tg://user?id={deadlybot}) 😈")
+    await event.edit(f"Starting superfban By [{DEFAULTUSER}](tg://user?id={DeadlyBot}) 😈")
     fedList = []
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
@@ -129,7 +129,7 @@ async def _(event):
         if len(fedList) == 0:
             await event.edit("Something went wrong.")
             return
-    await event.edit(f"Fbaning in {len(fedList)} feds by [{DEFAULTUSER}](tg://user?id={deadlybot}) 😈")
+    await event.edit(f"Fbaning in {len(fedList)} feds by [{DEFAULTUSER}](tg://user?id={DeadlyBot}) 😈")
     try:
         await event.client.send_message(chat, f"/start")
     except:
@@ -150,4 +150,4 @@ async def _(event):
         await asyncio.sleep(3)
         await event.client.send_message(chat, f"/fban {FBAN} {REASON} \n\n#SUPERFBAN_BY_DEADLYBOT")
         await asyncio.sleep(3)
-    await event.edit(f"SuperFBan Completed. Affected {len(fedList) - exCount} feds by [{DEFAULTUSER}](tg://user?id={deadlybot}) 😈")
+    await event.edit(f"SuperFBan Completed. Affected {len(fedList) - exCount} feds by [{DEFAULTUSER}](tg://user?id={DeadlyBot}) 😈")
