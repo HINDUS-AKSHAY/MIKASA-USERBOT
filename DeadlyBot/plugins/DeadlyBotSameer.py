@@ -148,6 +148,6 @@ async def _(event):
             continue
         await event.client.send_message(chat, f"/joinfed {fed}")
         await asyncio.sleep(3)
-        await event.client.send_message(chat, f"/fban {FBAN} {REASON} \n\n#SUPERFBAN_BY_DEADLYBOT")
+        await event.client.send_message(chat, f"/fban {FBAN} {REASON} \n\n#SUPERFBAN_BY_DeadlyBot")
         await asyncio.sleep(3)
     await event.edit(f"SuperFBan Completed. Affected {len(fedList) - exCount} feds by [{DEFAULTUSER}](tg://user?id={DeadlyBot}) 😈")

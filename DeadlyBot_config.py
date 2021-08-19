@@ -86,7 +86,7 @@ class Config(object):
     TAG_LOGGER = os.environ.get("TAG_LOGGER", None)
     if TAG_LOGGER: 
         TAG_LOGGER = int(TAG_LOGGER)
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "DEADLYBOT")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "DeadlyBot")
     TEMP_DIR = os.environ.get("TEMP_DIR", None)
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
     TZ = os.environ.get("TZ", "Asia/Kolkata")
