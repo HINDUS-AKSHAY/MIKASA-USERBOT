@@ -6,4 +6,4 @@ DEADLY BOT OP
                                 
 """
 
-python3 -m Deadlybot
+python3 -m DeadlyBot

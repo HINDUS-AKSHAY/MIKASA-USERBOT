@@ -94,7 +94,7 @@ async def _(event):
     await bot.send_file(
         event.chat_id,
         directory_name + ".zip",
-        caption="Zipped By Deadlybot",
+        caption="Zipped By DeadlyBot",
         force_document=True,
         allow_cache=False,
         reply_to=event.message.id,
@@ -142,7 +142,7 @@ async def _(event):
             await bot.send_file(
                 event.chat_id,
                 directory_name + ".rar",
-                caption="rarred By Deadlybot",
+                caption="rarred By DeadlyBot",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -195,7 +195,7 @@ async def _(event):
             await bot.send_file(
                 event.chat_id,
                 directory_name + ".7z",
-                caption="7z archived By Deadlybot",
+                caption="7z archived By DeadlyBot",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -248,7 +248,7 @@ async def _(event):
             await bot.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By Deadlybot",
+                caption="TAR By DeadlyBot",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,

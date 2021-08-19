@@ -16,10 +16,10 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from Deadlybot import *
-from Deadlybot.config import Config
-from Deadlybot.helpers import *
-from Deadlybot.utils import *
+from DeadlyBot import *
+from DeadlyBot.config import Config
+from DeadlyBot.helpers import *
+from DeadlyBot.utils import *
 
 async def reply_id(event):
     reply_to_id = None
@@ -131,4 +131,4 @@ def media_type(message):
         return "Document"
     return None
 
-# Deadlybot
+# DeadlyBot

@@ -1,6 +1,6 @@
 from telethon import events
 
-from Deadlybot.sql.welcome_sql import get_current_welcome, add_welcome, rm_welcome, update_welcome
+from DeadlyBot.sql.welcome_sql import get_current_welcome, add_welcome, rm_welcome, update_welcome
 from . import *
 
 lg_id = Config.LOGGER_ID

@@ -4,7 +4,7 @@ from telethon.errors import ChatAdminRequiredError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.users import GetFullUserRequest
 
-from Deadlybot.utils import deadly_cmd, edit_or_reply, sudo_cmd
+from DeadlyBot.utils import deadly_cmd, edit_or_reply, sudo_cmd
 DEFAULTUSER = Config.YOUR_NAME
 
 DeadlyBot = bot.uid

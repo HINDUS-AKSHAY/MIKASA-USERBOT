@@ -44,7 +44,7 @@ async def _(event):
         if event.reply_to_msg_id:
             message_id = event.reply_to_msg_id
         with io.BytesIO(im_png) as out_file:
-            out_file.name = "Deadlybot.ScreenCapture.PNG"
+            out_file.name = "DeadlyBot.ScreenCapture.PNG"
             await bot.send_file(
                 event.chat_id,
                 out_file,
@@ -61,7 +61,7 @@ async def _(event):
         await eod(deadly, traceback.format_exc())
 
 CmdHelp("capture").add_command(
-        "screenshot", "<link>", "Gives out the web screenshot of given link via Google Crome Bin in .png format", ".screenshot https://github.com/deadlyboy-op/Deadlybot"
+        "screenshot", "<link>", "Gives out the web screenshot of given link via Google Crome Bin in .png format", ".screenshot https://github.com/deadlyboy-op/DeadlyBot"
 ).add_command(
 	"webshot", "<link>", f"Same as  {hl}screenshot."
 ).add_info(

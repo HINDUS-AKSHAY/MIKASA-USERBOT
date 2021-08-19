@@ -62,15 +62,15 @@ async def remove_background(event):
         )
         return
     contentType = response.headers.get("content-type")
-    remove_bg_image = "Deadlybot.png"
+    remove_bg_image = "DeadlyBot.png"
     if "image" in contentType:
-        with open("Deadlybot.png", "wb") as removed_bg_file:
+        with open("DeadlyBot.png", "wb") as removed_bg_file:
             removed_bg_file.write(response.content)
     else:
         await edit_or_reply(deadlyevent, f"`{response.content.decode('UTF-8')}`")
         return
     if cmd == "srmbg":
-        file = convert_tosticker(remove_bg_image, filename="Deadlybot.webp")
+        file = convert_tosticker(remove_bg_image, filename="DeadlyBot.webp")
         await event.client.send_file(
             event.chat_id,
             file,

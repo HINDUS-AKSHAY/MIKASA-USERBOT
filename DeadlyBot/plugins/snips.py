@@ -1,5 +1,5 @@
 from telethon import events
-from Deadlybot.sql import snip_sql as sq
+from DeadlyBot.sql import snip_sql as sq
 from . import *
 
 lg_id = Config .LOGGER_ID

@@ -1,5 +1,5 @@
 
-from Deadlybot_config import Config
+from DeadlyBot_config import Config
 
 class Development(Config):
   # get these values from my.telegram.org. 
@@ -42,4 +42,4 @@ class Development(Config):
   SUDO_HANDLER = "!"
 
 # end of required config
-# Deadlybot
+# DeadlyBot

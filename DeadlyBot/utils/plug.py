@@ -16,16 +16,16 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from Deadlybot import *
-from Deadlybot.helpers import *
-from Deadlybot.config import *
-from Deadlybot.utils import *
+from DeadlyBot import *
+from DeadlyBot.helpers import *
+from DeadlyBot.config import *
+from DeadlyBot.utils import *
 
 
 # ENV
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from Deadlybot.config import Config
+    from DeadlyBot.config import Config
 else:
     if os.path.exists("Config.py"):
         from Config import Development as Config
@@ -36,19 +36,19 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import Deadlybot.utils
+        import DeadlyBot.utils
 
-        path = Path(f"Deadlybot/plugins/{shortname}.py")
-        name = "Deadlybot.plugins.{}".format(shortname)
+        path = Path(f"DeadlyBot/plugins/{shortname}.py")
+        name = "DeadlyBot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("Deadlybot - Successfully imported " + shortname)
+        LOGS.info("DeadlyBot - Successfully imported " + shortname)
     else:
-        import Deadlybot.utils
+        import DeadlyBot.utils
 
-        path = Path(f"Deadlybot/plugins/{shortname}.py")
-        name = "Deadlybot.plugins.{}".format(shortname)
+        path = Path(f"DeadlyBot/plugins/{shortname}.py")
+        name = "DeadlyBot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -56,10 +56,10 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = Deadlybot.utils
+        sys.modules["uniborg.util"] = DeadlyBot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.Deadlybot = bot
+        mod.DeadlyBot = bot
         mod.edit_or_reply = edit_or_reply
         mod.eor = edit_or_reply
         mod.delete_deadly = delete_deadly
@@ -67,13 +67,13 @@ def load_module(shortname):
         mod.Var = Config
         mod.admin_cmd = deadly_cmd
         # support for other userbots
-        sys.modules["userbot.utils"] = Deadlybot.utils
-        sys.modules["userbot"] = Deadlybot
+        sys.modules["userbot.utils"] = DeadlyBot.utils
+        sys.modules["userbot"] = DeadlyBot
         # support for paperplaneextended
-        sys.modules["userbot.events"] = Deadlybot
+        sys.modules["userbot.events"] = DeadlyBot
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["Deadlybot.plugins." + shortname] = mod
+        sys.modules["DeadlyBot.plugins." + shortname] = mod
         LOGS.info("⚡ ∂єα∂ℓу кααℓ Bσт ⚡ - Successfully Imported " + shortname)
 
 
@@ -86,7 +86,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except BaseException:
-            name = f"Deadlybot.plugins.{shortname}"
+            name = f"DeadlyBot.plugins.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -95,4 +95,4 @@ def remove_plugin(shortname):
     except BaseException:
         raise ValueError
 
-# Deadlybot
+# DeadlyBot

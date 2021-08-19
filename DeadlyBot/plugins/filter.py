@@ -3,7 +3,7 @@ import re
 from telethon import events, utils
 from telethon.tl import types
 from . import *
-from Deadlybot.sql.filter_sql import get_filter, add_filter, remove_filter, get_all_filters, remove_all_filters
+from DeadlyBot.sql.filter_sql import get_filter, add_filter, remove_filter, get_all_filters, remove_all_filters
 
 
 DELETE_TIMEOUT = 0

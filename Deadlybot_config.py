@@ -104,4 +104,4 @@ class Development(Config):
     LOGGER = True
 
 
-# Deadlybot
+# DeadlyBot

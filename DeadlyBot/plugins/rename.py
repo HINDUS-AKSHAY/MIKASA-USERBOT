@@ -172,7 +172,7 @@ async def _(event):
                     event.chat_id,
                     downloaded_file_name,
                     thumb=thumb,
-                    caption="reuploaded by [Deadlybot](https://t.me/Deadlybot_official_chat)",
+                    caption="reuploaded by [DeadlyBot](https://t.me/DeadlyBot_official_chat)",
                     force_document=False,
                     allow_cache=False,
                     reply_to=event.message.id,

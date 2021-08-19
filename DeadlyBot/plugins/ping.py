@@ -22,5 +22,5 @@ CmdHelp("ping").add_command(
   "✅ Harmless Module"
 ).add()
 
-# Deadlybot
+# DeadlyBot
 

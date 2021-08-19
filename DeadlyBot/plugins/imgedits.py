@@ -6,8 +6,8 @@ import sys
 import os
 from . import *
 
-if not os.path.isdir("./Deadlybot/"):
-    os.makedirs("./Deadlybot/")
+if not os.path.isdir("./DeadlyBot/"):
+    os.makedirs("./DeadlyBot/")
 
 
 @bot.on(deadly_cmd(pattern=r"feye$"))

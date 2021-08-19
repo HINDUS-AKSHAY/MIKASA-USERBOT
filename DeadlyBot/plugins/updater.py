@@ -6,7 +6,7 @@ import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from Deadlybot.helpers import runner
+from DeadlyBot.helpers import runner
 from . import *
 
 
@@ -94,7 +94,7 @@ async def update(event, repo, ups_rem, ac_br):
     await event.edit(
         "✅ Successfully updated ∂єα∂ℓу кααℓ Bσт!\n\nBot is restarting please wait for a minute."
     )
-    args = [sys.executable, "-m", "Deadlybot"]
+    args = [sys.executable, "-m", "DeadlyBot"]
     os.execle(sys.executable, *args, os.environ)
     return
 

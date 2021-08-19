@@ -429,7 +429,7 @@ CmdHelp("tools").add_command(
 ).add_command(
   "url", "<link>", "Shortens the given long link"
 ).add_command(
-  "currency", "<amount> <from> <to>", "Currency converter for Deadlybot", ".currency 10 usd inr"
+  "currency", "<amount> <from> <to>", "Currency converter for DeadlyBot", ".currency 10 usd inr"
 ).add_command(
   "cal", "<year ; month>", "Shows you the calendar of given month and year"
 ).add_command(

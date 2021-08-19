@@ -29,9 +29,9 @@ async def spammer(e):
 async def bigspam(deadly):
     if not deadly.text[0].isalpha() and deadly.text[0] not in ("/", "#", "@", "!"):
         deadly_msg = deadly.text
-        Deadlybot_count = int(deadly_msg[9:13])
+        DeadlyBot_count = int(deadly_msg[9:13])
         deadly_spam = str(deadly.text[13:])
-        for i in range(1, Deadlybot_count):
+        for i in range(1, DeadlyBot_count):
             await deadly.respond(deadly_spam)
         await deadly.delete()
         await deadly.client.send_message(
@@ -89,7 +89,7 @@ CmdHelp("spam").add_command(
 ).add_command(
   "dspam", "<delay> <spam count> <text>", "Sends the text 'X' number of times in 'Y' seconds of delay", ".dspam 5 100 Hello"
 ).add_command(
-  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what Deadlybot iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
+  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what DeadlyBot iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
 ).add_info(
   "Spammers Commands"
 ).add_warning(

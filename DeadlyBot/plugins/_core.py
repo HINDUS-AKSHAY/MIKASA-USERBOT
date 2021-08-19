@@ -18,7 +18,7 @@ async def kk(event):
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
-    cmd = "ls Deadlybot/plugins"
+    cmd = "ls DeadlyBot/plugins"
     thumb = deadly_logo
     process = await asyncio.create_subprocess_sdeadly(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -52,7 +52,7 @@ async def send(event):
     thumb = deadly_logo
     input_str = event.pattern_match.group(1)
     omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {deadly_mention}\n\n⚡ **[ʟɛɢɛռɖǟʀʏ ǟʄ ɖɛǟɖʟʏ ɮօȶ]({chnl_link})** ⚡"
-    the_plugin_file = "./Deadlybot/plugins/{}.py".format(input_str)
+    the_plugin_file = "./DeadlyBot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
             event.chat_id,
@@ -82,7 +82,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
                 await event.get_reply_message(),
-                "./Deadlybot/plugins/"  # pylint:disable=E0602
+                "./DeadlyBot/plugins/"  # pylint:disable=E0602
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
@@ -115,7 +115,7 @@ async def uninstall(kraken):
     if kraken.fwd_from:
         return
     shortname = kraken.pattern_match["shortname"]
-    dir_path =f"./Deadlybot/plugins/{shortname}.py"
+    dir_path =f"./DeadlyBot/plugins/{shortname}.py"
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
@@ -170,9 +170,9 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in Deadlybot."
+  "cmds", None, "Gives out the list of modules in DeadlyBot."
 ).add_warning(
   "❌ Install External Plugin On Your Own Risk. We won't help if anything goes wrong after installing a plugin."
 ).add()
 
-# Deadlybot
+# DeadlyBot

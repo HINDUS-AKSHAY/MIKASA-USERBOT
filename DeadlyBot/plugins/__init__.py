@@ -1,20 +1,20 @@
 import datetime
-from Deadlybot import *
-from Deadlybot.config import Config
-from Deadlybot.helpers import *
-from Deadlybot.utils import *
-from Deadlybot.random_strings import *
-from Deadlybot.version import __deadly__
+from DeadlyBot import *
+from DeadlyBot.config import Config
+from DeadlyBot.helpers import *
+from DeadlyBot.utils import *
+from DeadlyBot.random_strings import *
+from DeadlyBot.version import __deadly__
 from telethon import version
 
 
 DEADLY_USER = bot.me.first_name
 official_sameer = bot.uid
 deadly_mention = f"[{DEADLY_USER}](tg://user?id={official_sameer})"
-deadly_logo = "./Deadlybot/resources/pics/Deadlybot_logo.jpg"
-cjb = "./Deadlybot/resources/pics/cjb.jpg"
-restlo = "./Deadlybot/resources/pics/rest.jpeg"
-shuru = "./Deadlybot/resources/pics/shuru.jpg"
+deadly_logo = "./DeadlyBot/resources/pics/DeadlyBot_logo.jpg"
+cjb = "./DeadlyBot/resources/pics/cjb.jpg"
+restlo = "./DeadlyBot/resources/pics/rest.jpeg"
+shuru = "./DeadlyBot/resources/pics/shuru.jpg"
 hl = Config.HANDLER
 shl = Config.SUDO_HANDLER
 deadly_ver = __deadly__
@@ -70,4 +70,4 @@ WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attract
 """
 # will add more soon
 
-# Deadlybot
+# DeadlyBot

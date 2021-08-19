@@ -3,8 +3,8 @@ import re
 
 from telethon import events
 
-from Deadlybot import bot
-from Deadlybot.config import Config
+from DeadlyBot import bot
+from DeadlyBot.config import Config
 
 
 # forward check
@@ -90,4 +90,4 @@ def no_grp():
     return decorator
 
 
-# Deadlybot
+# DeadlyBot

@@ -3,7 +3,7 @@ import asyncio
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from Deadlybot.sql import antiflood_sql as sq
+from DeadlyBot.sql import antiflood_sql as sq
 from . import *
 
 CHAT_FLOOD = sq.__load_flood_settings()

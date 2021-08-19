@@ -126,4 +126,4 @@ async def make_gif(event, file):
             return "Unblock @tgstogifbot"
 
 
-# Deadlybot
+# DeadlyBot

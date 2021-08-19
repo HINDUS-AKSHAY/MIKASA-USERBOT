@@ -75,4 +75,4 @@ wikipedia
 youtube-search-python
 youtube_dl
 youtube-search
-Deadlybot
+DeadlyBot

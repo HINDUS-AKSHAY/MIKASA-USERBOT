@@ -86,7 +86,7 @@ async def g_download(event):
     await event.edit("File Downloaded.\nName: `" + str(file_name) + "`")
 
 CmdHelp("gdrive").add_command(
-  "gdl", "gdrive link", "Downloads the file from gdirve to Deadlybot's local storage. Use .upload to upload it."
+  "gdl", "gdrive link", "Downloads the file from gdirve to DeadlyBot's local storage. Use .upload to upload it."
 ).add_info(
   "Google Drive Downloader"
 ).add_warning(
