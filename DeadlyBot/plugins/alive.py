@@ -60,8 +60,8 @@ deadly_caption += f"┣•➳➠ `𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍:` `{tel_ver}`
 deadly_caption += f"┣•➳➠ `𝐕𝐄𝐑𝐒𝐈𝐎𝐍:` `{deadly_ver}`\n"
 deadly_caption += f"┣•➳➠ `𝐀𝐁𝐔𝐒𝐄:` `{abuse_m}`\n"
 deadly_caption += f"┣•➳➠ `𝐒𝐔𝐃𝐎:` `{is_sudo}`\n"
-deadly_caption += f"┣•➳➠ `𝐂𝐇𝐀𝐍𝐍𝐄𝐋: [𝐉𝐎𝐈𝐍](Config.YOUR_CHANNEL)\n"
-deadly_caption += f"┣•➳➠ `𝐆𝐑𝐎𝐔𝐏: [𝐉𝐎𝐈𝐍](Config.YOUR_GROUP)\n"
+deadly_caption += f"┣•➳➠ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:  [𝐉𝐎𝐈𝐍](Config.YOUR_CHANNEL)\n"
+deadly_caption += f"┣•➳➠ 𝐆𝐑𝐎𝐔𝐏:  [𝐉𝐎𝐈𝐍](Config.YOUR_GROUP)\n"
 deadly_caption += f"┗━━━━━━━━━━━━━━━━━━━\n" 
 
 
