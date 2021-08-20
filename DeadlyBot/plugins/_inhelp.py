@@ -20,7 +20,7 @@ from . import *
 deadly_row = Config.BUTTONS_IN_HELP
 deadly_emoji = Config.EMOJI_IN_HELP
 deadly_pic = Config.PMPERMIT_PIC or "https://telegra.ph/file/58df4d86400a32acd.jpg"
-cstm_pmp = "YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
+cstm_pmp = "ʏᴏᴜ ʜᴀᴠᴇ ᴛʀᴇsᴘᴀssᴇᴅ ᴛᴏ ᴍʏ ᴍᴀsᴛᴇʀ's ᴘᴍ!\nᴛʜɪs ɪs ɪʟʟᴇɢᴀʟ ᴀɴᴅ ʀᴇɢᴀʀᴅᴇᴅ ᴀs ᴀ ᴄʀɪᴍᴇ."
 ALV_PIC = Config.ALIVE_PIC
 
 PM_WARNS = {}
