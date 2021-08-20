@@ -35,15 +35,15 @@ LOG_GP = Config.LOGGER_ID
 mssge = (
     str(cstm_pmp)
     if cstm_pmp
-    else "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-)
+    else "ʏᴏᴜ ʜᴀᴠᴇ ᴛʀᴇsᴘᴀssᴇᴅ ᴛᴏ ᴍʏ ᴍᴀsᴛᴇʀ's ᴘᴍ!\nᴛʜɪs ɪs ɪʟʟᴇɢᴀʟ ᴀɴᴅ ʀᴇɢᴀʀᴅᴇᴅ ᴀs ᴀ ᴄʀɪᴍᴇ.**"
+)           
 
 USER_BOT_WARN_ZERO = "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blocked and Reported**"
 
 deadly_FIRST = (
     "⚠️ 𝐇𝐄𝐋𝐋𝐎, 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐃𝐄𝐀𝐃𝐋𝐘 𝐊𝐀𝐀𝐋 𝐁𝐎𝐓 𝐔𝐋𝐓𝐑𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 𝐏𝐑𝐎𝐓𝐎𝐂𝐎𝐋 ⚠️\n"
     f"\n{cstm_pmp}\n\n"
-    "To start a valid conversation\n\n🔸Register Your Request!🔹\n🔸Send `/start` To Register🔹\n🔸Hopefully u will get a reply🔹"
+    "ᴛᴏ sᴛᴀʀᴛ ᴀ ᴠᴀʟɪᴅ ᴄᴏɴᴠᴇʀsᴀᴛɪᴏɴ\n\n🔸ʀᴇɢɪsᴛᴇʀ! ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ🔹\n🔸sᴇɴᴅ `/start` ᴛᴏ ʀᴇɢɪsᴛᴇʀ🔹\n🔸ʜᴏᴘᴇғᴜʟʟʏ ᴜ ᴡɪʟʟ ɢᴇᴛ ᴀ ʀᴇᴘʟʏ🔹"
 )
 
 
