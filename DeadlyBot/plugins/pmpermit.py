@@ -14,8 +14,8 @@ PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 PM_ON_OFF = Config.PM_PERMIT
 CSTM_PMP = Config.CUSTOM_PMPERMIT
-DEADLY_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
-DEADLY_FIRST = (
+HELL_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
+HELL_FIRST = (
     "⚠️ 𝐇𝐄𝐋𝐋𝐎, 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐃𝐄𝐀𝐃𝐋𝐘 𝐊𝐀𝐀𝐋 𝐁𝐎𝐓 𝐔𝐋𝐓𝐑𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 𝐏𝐑𝐎𝐓𝐎𝐂𝐎𝐋 ⚠️\n"
     f"\n{CSTM_PMP}\n\n"
     "To start a valid conversation\n\n🔸Register Your Request!🔹\n🔸Send `/start` To Register🔹\n🔸Hopefully u will get a reply🔹"
