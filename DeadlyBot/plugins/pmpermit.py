@@ -13,7 +13,7 @@ WARN_PIC = Config.PMPERMIT_PIC or "https://telegra.ph/file/58df4d86400922aa32acd
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 PM_ON_OFF = Config.PM_PERMIT
-CSTM_PMP = Config.CUSTOM_PMPERMIT
+CSTM_PMP = "YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 HELL_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
 HELL_FIRST = (
     "⚠️ 𝐇𝐄𝐋𝐋𝐎, 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐃𝐄𝐀𝐃𝐋𝐘 𝐊𝐀𝐀𝐋 𝐁𝐎𝐓 𝐔𝐋𝐓𝐑𝐀 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 𝐏𝐑𝐎𝐓𝐎𝐂𝐎𝐋 ⚠️\n"
