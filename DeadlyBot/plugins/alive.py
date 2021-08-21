@@ -23,7 +23,7 @@ async def up(deadly):
     await bot.send_file(deadly.chat_id, DEADLY_PIC, caption=DEADLY_CAPTION)
     await deadly.delete()
 
-DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/37ac22fe95355d62c2d76.mp4"
 DEADLY_CAPTION = "🔥 ℓєgєη∂яу αƒ ∂єα∂ℓу кααℓ 🔥\n\n"
 DEADLY_CAPTION += (
     f"                __↼🄼🄰🅂🅃🄴🅁⇀__\n  **『 {DEFAULTER} 』**\n\n"
@@ -52,7 +52,7 @@ async def up(deadly):
     await deadly.delete()
 
 
-DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/37ac22fe95355d62c2d76.mp4"
 deadly_caption = f"**{Config.ALIVE_MSG}**\n\n"
 deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"                
 deadly_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
