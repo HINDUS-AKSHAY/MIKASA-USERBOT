@@ -52,19 +52,16 @@ async def up(deadly):
     await deadly.delete()
 
 
-DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/37ac22fe95355d62c2d76.mp4"
 deadly_caption = f"**{Config.ALIVE_MSG}**\n\n"
 deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"                
-deadly_caption += f"𖣘 𝙰𝙱𝙾𝚄𝚃 𝙼𝚈 𝚂𝚈𝚂𝚃𝙴𝙼 𖣘\n"
-deadly_caption += f"➾ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽:` `{tel_ver}` \n"
-deadly_caption += f"➾ `𝚅𝙴𝚁𝚂𝙸𝙾𝙽:` `{deadly_ver}`\n"
-deadly_caption += f"➾ `𝙰𝙱𝚄𝚂𝙴:` `{abuse_m}`\n"
-deadly_caption += f"➾ `𝚂𝚄𝙳𝙾:` `{is_sudo}`\n"
-deadly_caption += f"➾ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻:  [𝙹𝙾𝙸𝙽](t.me/Config.YOUR_CHANNEL)\n"
-deadly_caption += f"➾ 𝙶𝚁𝙾𝚄𝙿:  [𝙹𝙾𝙸𝙽](t.me/Config.YOUR_GROUP)\n"
-deadly_caption += f"[✨ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝚂𝙰𝚅𝙰𝙶𝙴 ✨](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT)\n" 
+deadly_caption += f"𖣘 𝙰𝙱𝙾𝚄𝚃 𝙼𝚈 𝚂𝚈𝚂𝚃𝙴𝙼 𖣘\n\n"
+deadly_caption += f"➾ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽` ➣ `{tel_ver}` \n"
+deadly_caption += f"➾ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻: ➣ [𝙹𝙾𝙸𝙽](t.me/Config.YOUR_CHANNEL)\n"
+deadly_caption += f"➾ 𝙼𝚈 𝙶𝚁𝙾𝚄𝙿: ➣ [𝙹𝙾𝙸𝙽](t.me/Config.YOUR_GROUP)\n"
+deadly_caption += f"➾ `𝚂𝚄𝙳𝙾 𝙼𝙾𝙳𝙴:` ➣ `{is_sudo}`\n\n"
+deadly_caption += f"[✨ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚈𝙾𝚄𝚁 𝙳𝙴𝙰𝙳𝙻𝚈 𝙺𝙰𝙰𝙻 ✨](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT)\n" 
                                      
-                  
+                                 
                 
 CmdHelp("alive").add_command(
   "alive", None, "Shows the Default Alive Message"
