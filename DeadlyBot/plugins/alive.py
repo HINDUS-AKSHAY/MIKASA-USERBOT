@@ -26,7 +26,7 @@ async def up(deadly):
 DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/37ac22fe95355d62c2d76.mp4"
 DEADLY_CAPTION = "🔥 ℓєgєη∂яу αƒ ∂єα∂ℓу кααℓ 🔥\n\n"
 DEADLY_CAPTION += (
-    f"                __↼🄼🄰🅂🅃🄴🅁⇀__\n  **『 {DEFAULTER} 』**\n\n"
+    f"                __↼𝙼𝙰𝚂𝚃𝙴𝚁⇀__\n  **『 {DEFAULTER} 』**\n\n"
 )
 DEADLY_CAPTION += f"╔══════════════════╗\n"
 DEADLY_CAPTION += f"╠•➳➠ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽:` `{tel_ver}` \n"
@@ -55,16 +55,16 @@ async def up(deadly):
 DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/37ac22fe95355d62c2d76.mp4"
 deadly_caption = f"**{Config.ALIVE_MSG}**\n\n"
 deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"                
-deadly_caption += f"┏━━━━━━━━━━━━━━━━━━━\n"
-deadly_caption += f"┣•➳➠ `𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍:` `{tel_ver}` \n"
-deadly_caption += f"┣•➳➠ `𝐕𝐄𝐑𝐒𝐈𝐎𝐍:` `{deadly_ver}`\n"
-deadly_caption += f"┣•➳➠ `𝐀𝐁𝐔𝐒𝐄:` `{abuse_m}`\n"
-deadly_caption += f"┣•➳➠ `𝐒𝐔𝐃𝐎:` `{is_sudo}`\n"
-deadly_caption += f"┣•➳➠ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:  [𝐉𝐎𝐈𝐍](t.me/Config.YOUR_CHANNEL)\n"
-deadly_caption += f"┣•➳➠ 𝐆𝐑𝐎𝐔𝐏:  [𝐉𝐎𝐈𝐍](t.me/Config.YOUR_GROUP)\n"
-deadly_caption += f"┗━━━━━━━━━━━━━━━━━━━\n" 
-
-
+deadly_caption += f"𖣘 𝙰𝙱𝙾𝚄𝚃 𝙼𝚈 𝚂𝚈𝚂𝚃𝙴𝙼 𖣘\n"
+deadly_caption += f"➾ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽:` `{tel_ver}` \n"
+deadly_caption += f"➾ `𝚅𝙴𝚁𝚂𝙸𝙾𝙽:` `{deadly_ver}`\n"
+deadly_caption += f"➾ `𝙰𝙱𝚄𝚂𝙴:` `{abuse_m}`\n"
+deadly_caption += f"➾ `𝚂𝚄𝙳𝙾:` `{}`\n"
+deadly_caption += f"➾ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻:  [𝙹𝙾𝙸𝙽](t.me/Config.YOUR_CHANNEL)\n"
+deadly_caption += f"➾ 𝙶𝚁𝙾𝚄𝙿:  [𝙹𝙾𝙸𝙽](t.me/Config.YOUR_GROUP)\n"
+deadly_caption += f"[✨ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝚂𝙰𝚅𝙰𝙶𝙴 ✨](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT)\n" 
+                                     
+                  
                 
 CmdHelp("alive").add_command(
   "alive", None, "Shows the Default Alive Message"
