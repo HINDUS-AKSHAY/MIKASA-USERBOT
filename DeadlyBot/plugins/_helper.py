@@ -9,7 +9,7 @@ from . import *
 msg = f"""
 **⚡ ℓєgєη∂яу αƒ ∂єα∂ℓу кααℓ ⚡ **
   •        [📑 Repo 📑](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT)
-  •        [🚀 Deploy 🚀](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeam-deadly%2Fdeadly-Bot&template=https%3A%2F%2Fgithub.com%2FTeam-deadly%2Fdeadly-bot)
+  •        [🚀 Deploy 🚀](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FDEADLY-FIGHTERS%2Fdeadly-KAAL-BOT&template=https%3A%2F%2Fgithub.com%2FDEADLYy-FIGHTERS%2Fdeadly-KAAL-bot)
   •  ©️ {deadly_channel} ™
 """
 botname = Config.BOT_USERNAME
