@@ -51,8 +51,9 @@ async def up(deadly):
     await bot.send_file(deadly.chat_id, DEADLY_PIC, caption=deadly_caption)
     await deadly.delete()
 
-
-deadly_caption = f"**{Config.ALIVE_MSG}**\n\n"
+deadly_caption = f"🔥 ℓєgєη∂яу αƒ ∂єα∂ℓу кααℓ 🔥\n\n"
+deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n\n"
+deadly_caption += f"**{Config.ALIVE_MSG}**\n\n"
 deadly_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n\n"                
 deadly_caption += f"𖣘 𝙰𝙱𝙾𝚄𝚃 𝙼𝚈 𝚂𝚈𝚂𝚃𝙴𝙼 𖣘\n\n"
 deadly_caption += f"➾ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽` ➣ `{tel_ver}` \n"
