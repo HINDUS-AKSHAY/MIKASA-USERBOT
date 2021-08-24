@@ -8,7 +8,7 @@ from telethon import events, functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 
 from . import *
-
+                   
 
 @bot.on(deadly_cmd(pattern=r"cmds"))
 @bot.on(sudo_cmd(pattern=r"cmds", allow_sudo=True))
@@ -51,7 +51,7 @@ async def send(event):
     message_id = event.message.id
     thumb = deadly_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {deadly_mention}\n\n⚡ **[ʟɛɢɛռɖǟʀʏ ǟʄ ɖɛǟɖʟʏ ɮօȶ]({chnl_link})** ⚡"
+    omk = f"**• Pʟᴜɢɪɴ Nᴀᴍᴇ ➪** `{input_str}`\n**• Uᴘʟᴏᴀᴅᴇᴅ Bʏ ➪** {deadly_mention}\n\n⚡ **[ʟɛɢɛռɖǟʀʏ ǟʄ ɖɛǟɖʟʏ ɮօȶ]({chnl_link})** ⚡"
     the_plugin_file = "./DeadlyBot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
