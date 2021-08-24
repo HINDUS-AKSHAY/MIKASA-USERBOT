@@ -73,7 +73,7 @@ async def send(event):
 async def install(event):
     if event.fwd_from:
         return
-    a = "__Installing.__"
+    a = "__Iɴsᴛᴀʟʟɪɴɢ__"
     b = 1
     await event.edit(a)
     if event.fwd_from:
@@ -100,9 +100,9 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await eor(event, a)
-                    return await eor(event, f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {deadly_mention}\n\n{string}\n\n        ⚡ **[ʟɛɢɛռɖǟʀʏ ǟʄ ɖɛǟɖʟʏ ɮօȶ]({chnl_link})** ⚡", link_preview=False)
+                    return await eor(event, f"✔️ **Iɴsᴛᴀʟʟᴇᴅ Mᴏᴅᴜʟᴇ** :- `{shortname}` \n✨✨ Bʏ :- {deadly_mention}\n\n{string}\n\n        ⚡ **[ʟɛɢɛռɖǟʀʏ ǟʄ ɖɛǟɖʟʏ ɮօȶ]({chnl_link})** ⚡", link_preview=False)
                 return await eor(event, f"Installed module `{os.path.basename(downloaded_file_name)}`")
-            else:
+            else:             
                 os.remove(downloaded_file_name)
                 return await eod(event, f"**Failed to Install** \n`Error`\nModule already installed or unknown format")
         except Exception as e: 
