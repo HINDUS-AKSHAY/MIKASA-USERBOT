@@ -6,8 +6,6 @@ from telethon.errors import (
 from telethon.tl import functions
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
-from userbot import CmdHelp
-
 from DeadlyBot.utils import deadly_cmd, edit_or_reply, sudo_cmd
 
 async def get_chatinfo(event):
@@ -129,12 +127,3 @@ async def _(event):
             await edit_or_reply(event, "Added user to the chat....")
 
 
-CmdHelp("invite").add_command(
-  "add", "<username/id>", "Adds the given user to the group"
-).add_command(
-  "inviteall", "<group username>", "Scraps user from the targeted group to your group. Basically Kidnapps user from one chat to another"
-).add_info(
-  "Invite them."
-).add_warning(
-  "✅ Harmless Module."
-).add()
