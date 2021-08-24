@@ -173,8 +173,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 title="Repository",
                 text=f"**⚡ lєgєηdяy Λƒ ∂єα∂ℓу кααℓ Bσт  ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://t.me/deadly_kaal_bot")],
-                    [Button.url("🚀 Deploy 🚀", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fteam-deadly%2Fdeadly-Bot&template=https%3A%2F%2Fgithub.com%2Fteam-deadly/deadly-bot%2Fdeadly-bot")],
+                    [Button.url("📑 Repo 📑", "https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT")],
+                    [Button.url("🚀 Deploy 🚀", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fdeadly-fighters%2Fdeadly-kaal-Bot&template=https%3A%2F%2Fgithub.com%2Fdeadly-fighters/deadly-kaal-bot%2Fdeadly-kaal-bot")],
                 ],
             )
 
@@ -200,7 +200,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/team-deadly/deadly-Bot"),
+                            "✨ REPO ✨", "https://github.com/DEADLY-FIGHTERS/deadly-KAAL-Bot"),
                         custom.Button.url
                     (
                             "🔰 TUTORIAL 🔰", ""
