@@ -37,9 +37,9 @@ else:
                 "BOT_TOKEN", api_id=Config.APP_ID, api_hash=Config.API_HASH
             ).start(bot_token=Config.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("🔰 Starting DeadlyBot 🔰")
+            LOGS.info("🔰 DEADLY BOT KO START KR RHE HAI DADA 🔰")
             bot.loop.run_until_complete(deadly_bot(Config.BOT_USERNAME))
-            LOGS.info("🔥 DeadlyBot Startup Completed 🔥")
+            LOGS.info("🔥 DEADLY KAAL BOT STARTUP COMPLETE 🔥 AB BASS PLUGINS DAALNA HE WAIT KRO 😂😂🔥")
         else:
             bot.start()
     except Exception as e:
@@ -75,9 +75,9 @@ for name in files:
 # let the party begin...
 LOGS.info("Starting Bot Mode !")
 tbot.start()
-LOGS.info("⚡ Your DeadlyBot Is Now Working ⚡")
+LOGS.info("⚡ YOUR BOT IS NOW READY BABE ⚡")
 LOGS.info(
-    "Head to @deadly_kaal_bot for Updates. Also join chat group to get help regarding to DeadlyBot."
+    "CONGRATULATIONS 🥳🥳🎊🎊 YOUR DEADLY KAAL BOT IS DEPLOYED 🎊 ... NOW TYPE .ping OR .alive TO CHECK OUR AMAZING BOT 🥳🔥 IF U HAVE ANY PROBLEM THEN JOIN @DEADLY_KAAL_BOT"
 )
 
 # that's life...
@@ -94,13 +94,15 @@ async def deadly_is_on():
 
 # Join DeadlyBot Channel after deploying 🤐😅
     try:
-        await bot(JoinChannelRequest("@deadly_kaal_bot"))
+         await bot(JoinChannelRequest("@deadly_kaal_bot"))
+         await bot(JoinChannelRequest("@deadly_kaAL_SUPPORT"))
+         await bot(JoinChannelRequest("@deadly_FIGHTERS"))
     except BaseException:
         pass
 
 # Why not come here and chat??
 #    try:
-#        await bot(JoinChannelRequest("@deadly_kaal_support"))
+#        await bot(JoinChannelRequest("@deadly_userbot"))
 #    except BaseException:
 #        pass
 
