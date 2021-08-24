@@ -40,11 +40,11 @@ async def restart(event):
         await event.edit("Restarting **[ █████████░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
         await event.edit("Restarting **[ ██████████░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
         await event.edit("Restarting **[ ███████████ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-        await event.edit("Restarted **[ ✓ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+        await event.edit("Restarted **[ ✓ ]** ...\nTʏᴘᴇ .ping Aғᴛᴇʀ 2 Mɪɴᴜᴛᴇ Tᴏ Cʜᴇᴄᴋ Iғ I Aᴍ Wᴏʀᴋɪɴɢ !")
         await bot.disconnect() 
         app = Heroku.apps()[HEROKU_APP_NAME]
         app.restart()
-    else:
+    else:                  
         execl(executable, executable, "bash", "DeadlyBot")
 
 
