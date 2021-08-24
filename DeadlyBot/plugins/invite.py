@@ -29,7 +29,7 @@ async def get_chatinfo(event):
         try:
             chat_info = await event.client(GetFullChannelRequest(chat))
         except ChannelInvalidError:
-            await event.reply("`Invalid channel/group`")
+            await event.reply("`Group Link To Sahi Daal Yr Mere Bhai🤦‍♂️")
             return None
         except ChannelPrivateError:
             await event.reply(
@@ -40,7 +40,7 @@ async def get_chatinfo(event):
             await event.reply("`Channel or supergroup doesn't exist`")
             return None
         except (TypeError, ValueError):
-            await event.reply("`Invalid channel/group`")
+            await event.reply("`Group Link To Sahi Daal Yr Mere Bhai🤦‍♂️`")
             return None
     return chat_info
 
@@ -58,9 +58,9 @@ async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        mafia = await edit_or_reply(event, "`processing...`")
+        mafia = await edit_or_reply(event, "`PROCESSING...`")
     else:
-        mafia = await edit_or_reply(event, "`processing...`")
+        mafia = await edit_or_reply(event, "`PROCESSING...`")
     kraken = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
@@ -69,7 +69,7 @@ async def get_users(event):
     f = 0
     error = "None"
 
-    await mafia.edit("**TerminalStatus**\n\n`kidnapeing Users.......`")
+    await mafia.edit("**TERMINAL RUNNING ✅ **\n\n`MEMBERS UTHAYING.......`")
     async for user in event.client.iter_participants(kraken.full_chat.id):
         try:
             if error.startswith("Too"):
@@ -81,13 +81,13 @@ async def get_users(event):
             )
             s = s + 1
             await mafia.edit(
-                f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
+                f"**TERMINAL RUNNING ✅...**\n\n• INVITES `{s}` PEOPLE \n• FAILED TO INVITE `{f}` PEOPLE\n\n**× LastError:** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
     return await mafia.edit(
-        f"**Terminal Finished** \n\n• Successfully kidnaped `{s}` people \n• failed to kidnape `{f}` people"
+        f"**TERMINAL FINISHED ✅** \n\n• SECCESSFULLY MEMBERS UTHAYING `{s}` \n• FAILED TO KIDNAP `{f}` PEOPLES"
     )
 
 
