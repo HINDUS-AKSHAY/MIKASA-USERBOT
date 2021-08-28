@@ -113,6 +113,126 @@ async def promote(promt):
         add_admins=False,
         invite_users=True,
         change_info=False,
+        ban_users=False,
+        delete_messages=True,
+        pin_messages=True,
+    )
+    deadlyevent = await eor(promt, "`Promoting User...`")
+    user, rank = await get_user_from_event(promt)
+    if not rank:
+        rank = "ǟɖʍɨռ"
+    if not user:
+        return
+    try:
+        await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
+        await deadlyevent.edit(f"**🔥 Kʀ Dɪʏᴀ Pʀᴏᴍᴏᴛᴇ Cʜʟ ᴀʙ Eᴋ Kᴀᴀᴍ ᴋʀ Cʜᴀᴋɴᴀ Mᴇɪɴ Lᴀᴀᴛᴀ Hᴜ ᴛᴜ DAᴀʀᴜ LAᴀ PAᴡʀʀʏʏ ᴋʀᴇɢᴇ Aᴘᴀɴ")
+    except BadRequestError:
+        await deadlyevent.edit(NO_PERM)
+        return
+    await promt.client.send_message(
+        lg_id,
+        "#PROMOTE\n"
+        f"\nUSER: [{user.first_name}](tg://user?id={user.id})\n"
+        f"CHAT: {promt.chat.title}(`{promt.chat_id}`)",
+    )
+
+
+@bot.on(deadly_cmd(pattern="promote1(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="promote1(?: |$)(.*)", allow_sudo=True))
+@errors_handler
+async def promote(promt):
+    if promt.fwd_from:
+        return
+    chat = await promt.get_chat()
+    admin = chat.admin_rights
+    creator = chat.creator
+    if not admin and not creator:
+        await eor(promt, NO_ADMIN)
+        return
+    new_rights = ChatAdminRights(
+        add_admins=False,
+        invite_users=True,
+        change_info=True,
+        ban_users=False,
+        delete_messages=True,
+        pin_messages=True,
+    )
+    deadlyevent = await eor(promt, "`Promoting User...`")
+    user, rank = await get_user_from_event(promt)
+    if not rank:
+        rank = "ǟɖʍɨռ"
+    if not user:
+        return
+    try:
+        await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
+        await deadlyevent.edit(f"**🔥 Kʀ Dɪʏᴀ Pʀᴏᴍᴏᴛᴇ Cʜʟ ᴀʙ Eᴋ Kᴀᴀᴍ ᴋʀ Cʜᴀᴋɴᴀ Mᴇɪɴ Lᴀᴀᴛᴀ Hᴜ ᴛᴜ DAᴀʀᴜ LAᴀ PAᴡʀʀʏʏ ᴋʀᴇɢᴇ Aᴘᴀɴ")
+    except BadRequestError:
+        await deadlyevent.edit(NO_PERM)
+        return
+    await promt.client.send_message(
+        lg_id,
+        "#PROMOTE\n"
+        f"\nUSER: [{user.first_name}](tg://user?id={user.id})\n"
+        f"CHAT: {promt.chat.title}(`{promt.chat_id}`)",
+    )
+
+
+@bot.on(deadly_cmd(pattern="promote2(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="promote2(?: |$)(.*)", allow_sudo=True))
+@errors_handler
+async def promote(promt):
+    if promt.fwd_from:
+        return
+    chat = await promt.get_chat()
+    admin = chat.admin_rights
+    creator = chat.creator
+    if not admin and not creator:
+        await eor(promt, NO_ADMIN)
+        return
+    new_rights = ChatAdminRights(
+        add_admins=True,
+        invite_users=True,
+        change_info=True,
+        ban_users=False,
+        delete_messages=True,
+        pin_messages=True,
+    )
+    deadlyevent = await eor(promt, "`Promoting User...`")
+    user, rank = await get_user_from_event(promt)
+    if not rank:
+        rank = "ǟɖʍɨռ"
+    if not user:
+        return
+    try:
+        await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
+        await deadlyevent.edit(f"**🔥 Kʀ Dɪʏᴀ Pʀᴏᴍᴏᴛᴇ Cʜʟ ᴀʙ Eᴋ Kᴀᴀᴍ ᴋʀ Cʜᴀᴋɴᴀ Mᴇɪɴ Lᴀᴀᴛᴀ Hᴜ ᴛᴜ DAᴀʀᴜ LAᴀ PAᴡʀʀʏʏ ᴋʀᴇɢᴇ Aᴘᴀɴ")
+    except BadRequestError:
+        await deadlyevent.edit(NO_PERM)
+        return
+    await promt.client.send_message(
+        lg_id,
+        "#PROMOTE\n"
+        f"\nUSER: [{user.first_name}](tg://user?id={user.id})\n"
+        f"CHAT: {promt.chat.title}(`{promt.chat_id}`)",
+    )
+
+
+@bot.on(deadly_cmd(pattern="promote3(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="promote3(?: |$)(.*)", allow_sudo=True))
+@errors_handler
+async def promote(promt):
+    if promt.fwd_from:
+        return
+    chat = await promt.get_chat()
+    admin = chat.admin_rights
+    creator = chat.creator
+    if not admin and not creator:
+        await eor(promt, NO_ADMIN)
+        return
+    new_rights = ChatAdminRights(
+        add_admins=True,
+        invite_users=True,
+        change_info=True,
         ban_users=True,
         delete_messages=True,
         pin_messages=True,
