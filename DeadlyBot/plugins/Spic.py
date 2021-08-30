@@ -7,8 +7,7 @@ async def oho(event):
   k = await event.get_reply_message()
   pic = await k.download_media()
   await bot.send_file(event.chat_id, pic, caption=f"""
-  Oʜᴏ! LOL, Dᴇsᴛʀᴜᴄᴛɪᴏɴ Mᴏᴅᴇ Pɪᴄ Dᴇsᴛʀᴏʏᴇᴅ!\n
-  Pɪᴄ Dᴇsᴛʀᴏʏᴇᴅ Bʏ \n\n[✰ ᒪᗴᘜᗴᑎᗪᖇY ᗪᗴᗩᗪᒪY ᗷOT ✰](t.me/deadly_kaal_bot) 
+  Oʜᴏ! LOL, Dᴇsᴛʀᴜᴄᴛɪᴏɴ Mᴏᴅᴇ Pɪᴄ Dᴇsᴛʀᴏʏᴇᴅ!\nPɪᴄ Dᴇsᴛʀᴏʏᴇᴅ Bʏ\n\n[✰ ᒪᗴᘜᗴᑎᗪᖇY ᗪᗴᗩᗪᒪY ᗷOT ✰](t.me/deadly_kaal_bot) 
   """)                                              
   await event.delete()
   
