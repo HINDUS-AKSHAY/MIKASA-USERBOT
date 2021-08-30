@@ -1,4 +1,4 @@
-#crafit @Shinchan7222
+#cradit @Shinchan7222
 
 from . import *
 
