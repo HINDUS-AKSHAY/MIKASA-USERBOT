@@ -1,3 +1,5 @@
+# credits - MOST OP PERSON IN TG - @LEGENDX08377 - LEGEND X 🔥❤️
+
 from . import *
 
 @bot.on(deadly_cmd(pattern="spic"))
