@@ -8,7 +8,7 @@ async def oho(event):
   pic = await k.download_media()
   await bot.send_file(event.chat_id, pic, caption=f"""
   OwO!! LoL, Destruction Mode Pic Destroyed!!
-  Pic captured By LEGENDRY DEADLY BOT🌚🌝
+  Pic Captured By [Legendry Deadly Bot](t.me/deadly_kaal_support) 🌚🌝
   """)
   await event.delete()
   
