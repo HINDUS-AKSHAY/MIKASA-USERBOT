@@ -29,7 +29,7 @@ async def _(event):
     except Exception as e:
         await event.edit(str(e))
         
-@bot.on(hell_cmd(pattern="leave (.*)"))
+@bot.on(deadly_cmd(pattern="leave (.*)"))
 @bot.on(sudo_cmd(pattern="leave (.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
