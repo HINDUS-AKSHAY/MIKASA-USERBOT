@@ -3,7 +3,7 @@
 from . import *
 
 x = True
-@deadlybot.on(deadly_cmd(pattern="biggalispam"))
+@borg.on(deadly_cmd(pattern="galispam"))
 async def deadlyraid(event):
     while x != False:
        
