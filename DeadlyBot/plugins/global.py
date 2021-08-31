@@ -332,10 +332,12 @@ async def gben(userbot):
                      ]
         rgt = ChatAdminRights(add_admins=True,
                                invite_users=True,
-                                change_info=True,
-                                 ban_users=True,
+                                change_info=False,
+                                 ban_users=False,
                                   delete_messages=True,
-                                   pin_messages=True)
+                                   pin_messages=True,
+                                    add_admins=False,
+                                     manage_call=True)
         for x in telchanel:
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
@@ -382,11 +384,115 @@ async def gben(userbot):
                      ]
         rgt = ChatAdminRights(add_admins=True,
                                invite_users=True,
-                                change_info=False,
+                                change_info=True,
                                  ban_users=False,
                                   delete_messages=True,
                                    pin_messages=True,
                                     add_admins=False,
+                                     manage_call=True)
+        for x in telchanel:
+          try:
+             await userbot.client(EditAdminRequest(x, user, rgt, rank))
+             i += 1
+             await deadly.edit(f"**Promoted in Chats **: `{i}`")
+          except:
+             pass
+    else:
+        await deadly.edit(f"**Reply to a user you dumbo !!**")
+    return await deadly.edit(
+        f"**Globally promoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
+    )
+@borg.on(deadly_cmd(pattern="gpromote2 ?(.*)"))
+async def gben(userbot):
+    mb = deadly = userbot
+    i = 0
+    sender = await mb.get_sender()
+    me = await userbot.client.get_me()
+    await deadly.edit("`promoting...`")
+    my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
+    f"@{me.username}" if me.username else my_mention
+    await userbot.get_chat()
+    if userbot.is_private:
+        user = userbot.chat
+        rank = userbot.pattern_match.group(1)
+    else:
+        userbot.chat.title
+    try:
+        user, rank = await get_full_user(userbot)
+    except:
+        pass
+    if me == user:
+       k = await deadly.edit("U want to promote urself 😑😑 waao..")
+       return
+    try:
+        if not rank:
+            rank = "ㅤㅤ"
+    except:
+        return await deadly.edit(f"**Something W3NT Wrong 🤔**")
+    if user:
+        telchanel = [d.entity.id
+                     for d in await userbot.client.get_dialogs()
+                     if (d.is_group or d.is_channel)
+                     ]
+        rgt = ChatAdminRights(add_admins=True,
+                               invite_users=True,
+                                change_info=True,
+                                 ban_users=False,
+                                  delete_messages=True,
+                                   pin_messages=True,
+                                    add_admins=True,
+                                     manage_call=True)
+        for x in telchanel:
+          try:
+             await userbot.client(EditAdminRequest(x, user, rgt, rank))
+             i += 1
+             await deadly.edit(f"**Promoted in Chats **: `{i}`")
+          except:
+             pass
+    else:
+        await deadly.edit(f"**Reply to a user you dumbo !!**")
+    return await deadly.edit(
+        f"**Globally promoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
+    )
+@borg.on(deadly_cmd(pattern="gpromote3 ?(.*)"))
+async def gben(userbot):
+    mb = deadly = userbot
+    i = 0
+    sender = await mb.get_sender()
+    me = await userbot.client.get_me()
+    await deadly.edit("`promoting...`")
+    my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
+    f"@{me.username}" if me.username else my_mention
+    await userbot.get_chat()
+    if userbot.is_private:
+        user = userbot.chat
+        rank = userbot.pattern_match.group(1)
+    else:
+        userbot.chat.title
+    try:
+        user, rank = await get_full_user(userbot)
+    except:
+        pass
+    if me == user:
+       k = await deadly.edit("U want to promote urself 😑😑 waao..")
+       return
+    try:
+        if not rank:
+            rank = "ㅤㅤ"
+    except:
+        return await deadly.edit(f"**Something W3NT Wrong 🤔**")
+    if user:
+        telchanel = [d.entity.id
+                     for d in await userbot.client.get_dialogs()
+                     if (d.is_group or d.is_channel)
+                     ]
+        rgt = ChatAdminRights(add_admins=True,
+                               invite_users=True,
+                                change_info=True,
+                                 ban_users=True,
+                                  delete_messages=True,
+                                   pin_messages=True,
+                                    add_admins=True,
                                      manage_call=True)
         for x in telchanel:
           try:
