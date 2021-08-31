@@ -115,7 +115,8 @@ async def promote(promt):
         change_info=False,
         ban_users=False,
         delete_messages=True,
-        pin_messages=True,
+        pin_messages=False,
+        manage_call=True,
     )
     deadlyevent = await eor(promt, "`Promoting User...`")
     user, rank = await get_user_from_event(promt)
