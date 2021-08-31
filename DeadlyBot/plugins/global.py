@@ -330,13 +330,12 @@ async def gben(userbot):
                      for d in await userbot.client.get_dialogs()
                      if (d.is_group or d.is_channel)
                      ]
-        rgt = ChatAdminRights(add_admins=True,
+        rgt = ChatAdminRights(add_admins=False,
                                invite_users=True,
                                 change_info=False,
                                  ban_users=False,
                                   delete_messages=True,
                                    pin_messages=True,
-                                    add_admins=False,
                                      manage_call=True)
         for x in telchanel:
           try:
@@ -382,13 +381,12 @@ async def gben(userbot):
                      for d in await userbot.client.get_dialogs()
                      if (d.is_group or d.is_channel)
                      ]
-        rgt = ChatAdminRights(add_admins=True,
+        rgt = ChatAdminRights(add_admins=False,
                                invite_users=True,
                                 change_info=True,
                                  ban_users=False,
                                   delete_messages=True,
                                    pin_messages=True,
-                                    add_admins=False,
                                      manage_call=True)
         for x in telchanel:
           try:
@@ -440,7 +438,6 @@ async def gben(userbot):
                                  ban_users=False,
                                   delete_messages=True,
                                    pin_messages=True,
-                                    add_admins=True,
                                      manage_call=True)
         for x in telchanel:
           try:
@@ -492,7 +489,6 @@ async def gben(userbot):
                                  ban_users=True,
                                   delete_messages=True,
                                    pin_messages=True,
-                                    add_admins=True,
                                      manage_call=True)
         for x in telchanel:
           try:
