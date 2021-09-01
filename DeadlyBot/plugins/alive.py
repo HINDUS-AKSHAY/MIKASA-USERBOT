@@ -26,7 +26,7 @@ async def up(deadly):
 DEADLY_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/37ac22fe95355d62c2d76.mp4"
 DEADLY_CAPTION = "🔥 ℓєgєη∂яу αƒ ∂єα∂ℓу кααℓ 🔥\n\n"
 DEADLY_CAPTION += (
-    f"                __↼𝙼𝙰𝚂𝚃𝙴𝚁⇀__\n  **『 {Config.YOUR_NAME} 』**\n\n"
+    f"                __↼𝙼𝙰𝚂𝚃𝙴𝚁⇀__\n  **『 {deadly_mention} 』**\n\n"
 )
 DEADLY_CAPTION += f"╔═══════════════╗\n"
 DEADLY_CAPTION += f"╠•➳➠ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽:` `{tel_ver}` \n"
