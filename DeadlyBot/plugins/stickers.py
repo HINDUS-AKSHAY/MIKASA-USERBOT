@@ -116,7 +116,7 @@ async def kang(args):
             cmd = "/newanimated"
 
         response = urllib.request.urlopen(
-            urllib.request.Request(f"http://t.me/addstickers/{packname}")
+            urllib.request.Request(f"http://t.me/addsticker/{packname}")
         )
         htmlstr = response.read().decode("utf8").split("\n")
 
@@ -256,7 +256,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await deadly.edit(
-            f"⚡** This Sticker iz [kanged](t.me/addstickers/{packname}) successfully to your pack **⚡",
+            f"⚡** This Sticker iz [kanged](t.me/addsticker/{packname}) successfully to your pack **⚡",
             parse_mode="md",
         )
 
