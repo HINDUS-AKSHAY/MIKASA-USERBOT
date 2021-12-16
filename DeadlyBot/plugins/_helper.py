@@ -18,11 +18,11 @@ botname = Config.BOT_USERNAME
 @deadly_cmd(pattern="repo$")
 async def repo(event):
     cids = await client_id(event)
-    officialsameer, DEADLY_USER, deadly_mention = cids[0], cids[1], cids[2]
+    official_sameer, DEADLY_USER, deadly_mention = cids[0], cids[1], cids[2]
     try:
         deadly = await event.client.inline_query(botname, "repo")
-        await hell[0].click(event.chat_id)
-        if event.sender_id == officialsameer:
+        await deadly[0].click(event.chat_id)
+        if event.sender_id == official_sameer:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
