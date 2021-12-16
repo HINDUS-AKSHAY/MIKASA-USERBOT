@@ -11,18 +11,18 @@ msg = f"""
 **⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
   •        [📑 Repo 📑](https://github.com/The-HellBot/HellBot)
   •        [🚀 Deploy 🚀](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FThe-HellBot%2FHellBot&template=https%3A%2F%2Fgithub.com%2Fthe-hellbot%2Fhellbot)
-  •  ©️ {hell_channel} ™
+  •  ©️ @DEADLY_FIGHTERS ™
 """
 botname = Config.BOT_USERNAME
 
 @deadly_cmd(pattern="repo$")
 async def repo(event):
     cids = await client_id(event)
-    ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+    officialsameer, DEADLY_USER, deadly_mention = cids[0], cids[1], cids[2]
     try:
-        hell = await event.client.inline_query(botname, "repo")
+        deadly = await event.client.inline_query(botname, "repo")
         await hell[0].click(event.chat_id)
-        if event.sender_id == ForGo10God:
+        if event.sender_id == officialsameer:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
