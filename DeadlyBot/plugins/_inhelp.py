@@ -7,10 +7,10 @@ from telethon.events import InlineQuery, callbackquery
 from telethon.sync import custom
 from telethon.tl.functions.channels import JoinChannelRequest
 
-from userbot import *
-from userbot.cmdhelp import *
+from DeadlyBot import *
+from DeadlyBot.cmdhelp import *
 from DeadlyBot.utils import *
-from userbot.Config import Config
+from DeadlyBot.Config import Config
 
 deadly_row = Config.BUTTONS_IN_HELP
 deadly_emoji = Config.EMOJI_IN_HELP
