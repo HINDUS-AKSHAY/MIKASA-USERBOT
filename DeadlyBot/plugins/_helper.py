@@ -1,79 +1,99 @@
+from userbot.Config import Config
 import asyncio
+
 import requests
 from telethon import functions
-from telethon.errors import ChatSendInlineForbiddenError as noin
-from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
+from userbot import CMD_LIST, SUDO_LIST
+from deadlybot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot.Config import Config
 from . import *
 
-msg = f"""
-**⚡ ℓєgєη∂яу αƒ ∂єα∂ℓу кααℓ ⚡ **
-  •        [📑 Repo 📑](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT)
-  •        [🚀 Deploy 🚀](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FDEADLY-FIGHTERS%2Fdeadly-KAAL-BOT&template=https%3A%2F%2Fgithub.com%2FDEADLYy-FIGHTERS%2Fdeadly-KAAL-bot)
-  •  ©️ {deadly_channel} ™
-"""
-botname = Config.BOT_USERNAME
-
-@bot.on(deadly_cmd(pattern="repo$"))
-@bot.on(sudo_cmd(pattern="repo$", allow_sudo=True))
-async def repo(event):
-    try:
-        deadly = await bot.inline_query(botname, "repo")
-        await deadly[0].click(event.chat_id)
-        if event.sender_id == official_sameer:
-            await event.delete()
-    except (noin, dedbot):
-        await eor(event, msg)
-
-
-@bot.on(deadly_cmd(pattern="help ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="help ?(.*)", allow_sudo=True))
-async def yardim(event):
+@bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
+async def _(event):
     if event.fwd_from:
         return
-    tgbotusername = Config.BOT_USERNAME
+    tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
     input_str = event.pattern_match.group(1)
-    try:
-        if not input_str == "":
-            if input_str in CMD_HELP:
-                await eor(event, str(CMD_HELP[args]))
-    except:
-        pass
-    if tgbotusername is not None:
-        results = await event.client.inline_query(tgbotusername, "DeadlyBot_help")
+    if tgbotusername is not None or mafia_input == "text":
+        results = await event.client.inline_query(tgbotusername, "@MafiaBot_Support")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
         await event.delete()
     else:
-        await eor(event, "**⚠️ ERROR !!** \nPlease Re-Check BOT_TOKEN & BOT_USERNAME on Heroku.")
+        await edit_or_reply(event, ["NO_BOT"])
+    
+        if input_str in CMD_LIST:
+          string = "Commands found in {}:\n".format(input_str)
+          for i in CMD_LIST[input_str]:
+              string += "  " + i
+              string += "\n"
+          await event.edit(string)
+        else:
+          await event.edit(input_str + " is not a valid plugin!")
 
 
-@bot.on(deadly_cmd(pattern="plinfo(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="plinfo(?: |$)(.*)", allow_sudo=True))
-async def DeadlyBot(event):
+@bot.on(sudo_cmd(allow_sudo=True, pattern="help ?(.*)"))
+async def info(event):
     if event.fwd_from:
         return
-    args = event.pattern_match.group(1).lower()
-    if args:
-        if args in CMD_HELP:
-            await eor(event, str(CMD_HELP[args]))
-        else:
-            await eod(event, "**⚠️ Error !** \nNeed a module name to show plugin info.")
-    else:
-        string = ""
-        sayfa = [
-            sorted(list(CMD_HELP))[i : i + 5]
-            for i in range(0, len(sorted(list(CMD_HELP))), 5)
-        ]
-
-        for i in sayfa:
-            string += f"`▶️ `"
-            for sira, a in enumerate(i):
-                string += "`" + str(a)
-                if sira == i.index(i[-1]):
-                    string += "`"
-                else:
-                    string += "`, "
+    input_str = event.pattern_match.group(1)
+    if input_str == "text":
+        string = (
+            "Total {count} commands found in {plugincount} sudo plugins of MafiaBot\n\n"
+        )
+        mafiacount = 0
+        plugincount = 0
+        for i in sorted(SUDO_LIST):
+            plugincount += 1
+            string += f"{plugincount}) Commands found in Plugin " + i + " are \n"
+            for iter_list in SUDO_LIST[i]:
+                string += "    " + str(iter_list)
+                string += "\n"
+                mafiacount += 1
             string += "\n"
-        await eod(event, "Please Specify A Module Name Of Which You Want Info" + "\n\n" + string)
+        if len(string) > 4095:
+            data = string.format(count=mafiacount, plugincount=plugincount)
+            key = (
+                requests.post(
+                    "https://nekobin.com/api/documents", json={"content": data}
+                )
+                .json()
+                .get("result")
+                .get("key")
+            )
+            url = f"https://nekobin.com/{key}"
+            reply_text = f"All commands of the MafiaBot are [here]({url})"
+            await event.reply(reply_text, link_preview=False)
+            return
+        await event.reply(
+            string.format(count=mafiacount, plugincount=plugincount), link_preview=False
+        )
+        return
+    if input_str:
+        if input_str in SUDO_LIST:
+            string = "<b>{count} Commands found in plugin {input_str}:</b>\n\n"
+            mafiacount = 0
+            for i in SUDO_LIST[input_str]:
+                string += f"  •  <code>{i}</code>"
+                string += "\n"
+                mafiacount += 1
+            await event.reply(
+                string.format(count=mafiacount, input_str=input_str), parse_mode="HTML"
+            )
+        else:
+            reply = await event.reply(input_str + " is not a valid plugin!")
+            await asyncio.sleep(3)
+            await event.delete()
+            await reply.delete()
+    else:
+        string = "<b>Please specify which plugin do you want help for !!\
+            \nNumber of plugins : </b><code>{count}</code>\
+            \n<b>Usage:</b> <code>.help plugin name</code>\n\n"
+        mafiacount = 0
+        for i in sorted(SUDO_LIST):
+            string += "≈ " + f"<code>{str(i)}</code>"
+            string += " "
+            mafiacount += 1
+        await event.reply(string.format(count=mafiacount), parse_mode="HTML")
