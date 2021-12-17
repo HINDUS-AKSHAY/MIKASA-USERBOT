@@ -35,8 +35,8 @@ DEADLY_CAPTION += f"╠•➳➠ `𝙶𝚁𝙾𝚄𝙿:`  [𝙹𝙾𝙸𝙽](t.m
 DEADLY_CAPTION += f"╠•➳➠ `𝙲𝙷𝙰𝙽𝙽𝙴𝙻:` [𝙹𝙾𝙸𝙽](t.me/deadly_kaal_bot)\n"
 DEADLY_CAPTION += f"╠•➳➠ `𝙲𝚁𝙴𝙰𝚃𝙾𝚁:` [⚡𝙿𝚁𝙾⚡](https://t.me/DEADLY_TECHY/83)\n"
 DEADLY_CAPTION += f"╚═══════════════╝\n\n"
-DEADLY_CAPTION += " [✨𝚁𝙴𝙿𝙾✨](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT) 🔹 [📜𝙻𝙸𝙲𝙴𝙽𝚂𝙴📜](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT/blob/main/LICENSE)"
-                            
+DEADLY_CAPTION += " [✨𝙳𝙴𝙿𝙻𝙾𝚈 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙱𝙾𝚃✨](https://github.com/DEADLY-FIGHTERS/DEADLY-KAAL-BOT)"
+                                            
 #_______
 
 
