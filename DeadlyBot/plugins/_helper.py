@@ -3,7 +3,6 @@ import asyncio
 
 import requests
 from telethon import functions
-from DeadlyBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
