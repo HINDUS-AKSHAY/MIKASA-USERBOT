@@ -12,7 +12,7 @@ from DeadlyBot.utils import *
 from DeadlyBot_config import Config
 
 
-deadly_emoji = 💥
+deadly_emoji = Config.EMOJI_IN_HELP
 
 # thats how a lazy guy imports
 # DeadlyGhouls
