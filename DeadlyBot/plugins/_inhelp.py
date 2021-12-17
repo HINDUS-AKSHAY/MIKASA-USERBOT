@@ -63,7 +63,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running DeadlyGhouls**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**𝗥𝗨𝗡𝗡𝗜𝗡𝗚 𝗗𝗘𝗔𝗗𝗟𝗬 𝗕𝗢𝗧**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -78,7 +78,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@DEADLY_TECHY",
-                text="""**Hey! This is [DeadlyGhouls.](https://t.me/DEADLY_TECHY) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [DᴇᴀᴅʟʏBᴏᴛ](https://t.me/DEADLY_TECHY) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/DEADLY_TECHY"),
@@ -103,14 +103,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DeadlyGhouls AND USE. © DeadlyGhouls ™",
+                "Hᴇʟʟᴏ Tʜᴇʀᴇ, ᴘʟᴇᴀsᴇ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ. © DeadʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [DeadlyGhouls](https://t.me/DEADLY_TECHY) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF** [DeadlyBᴏᴛ](https://t.me/DEADLY_TECHY) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -119,10 +119,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_deadly(event,
-              "⚜️DeadlyGhouls Menu Provider Is now Closed⚜️\n\n         **[© DeadlyGhouls ™](t.me/DEADLY_TECHY)**", 5, link_preview=False
+              "⚜️DᴇᴀᴅʟʏBᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ⚜️\n\n         **[© DᴇᴀᴅʟʏBᴏᴛ ™](t.me/DEADLY_TECHY)**", 5, link_preview=False
             )
         else:
-            deadly_alert = "HELLO THERE. PLEASE MAKE YOUR OWN DeadlyGhouls AND USE. © DeadlyGhouls ™"
+            deadly_alert = ""Hᴇʟʟᴏ Tʜᴇʀᴇ, ᴘʟᴇᴀsᴇ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ. © DeadʟʏBᴏᴛ ™"
             await event.answer(deadly_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -131,8 +131,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DeadlyGhouls AND USE. © DeadlyGhouls ™",
-                cache_time=0,
+              "Hᴇʟʟᴏ Tʜᴇʀᴇ, ᴘʟᴇᴀsᴇ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ. © DeadʟʏBᴏᴛ ™",
+              cache_time=0,
                 alert=True,
             )
 
@@ -164,7 +164,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN DeadlyGhouls AND USE. © DeadlyGhouls ™",
+                "Hᴇʟʟᴏ Tʜᴇʀᴇ, ᴘʟᴇᴀsᴇ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ. © DeadʟʏBᴏᴛ ™",
                 cache_time=0,
                 alert=True,
             )
@@ -205,7 +205,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             ],
             link_preview=False,
         )
-
+                 
 
 # Ask owner before using it in your codes
 # Kangers like LB stay away
