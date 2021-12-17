@@ -52,7 +52,7 @@ def button(page, modules):
     # Changing this line may give error in bot as i added some special cmds in DeadlyGhouls channel to get this module work...
 
     modules = CMD_HELP
-if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
+if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(InlineQuery)  # pylint:disable=E0602
     async def inline_handler(event):
         builder = event.builder
