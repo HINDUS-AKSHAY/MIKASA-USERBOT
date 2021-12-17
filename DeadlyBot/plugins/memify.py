@@ -4,8 +4,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from . import *
 from DeadlyBot.utils.cmds import CmdHelp
-from var import Var
-
+from config import Config 
 client = borg
 
 
