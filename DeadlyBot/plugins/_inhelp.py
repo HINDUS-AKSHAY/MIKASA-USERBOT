@@ -7,7 +7,7 @@ from telethon.sync import custom
 from telethon.tl.functions.channels import JoinChannelRequest
 
 from DeadlyBot import *
-from DeadlyBot.cmdhelp import *
+from DeadlyBot.utils cmdhelp import *
 from DeadlyBot.utils import *
 from userbot.Config import Config
 
