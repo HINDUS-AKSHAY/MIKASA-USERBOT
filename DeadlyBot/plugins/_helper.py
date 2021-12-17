@@ -1,10 +1,10 @@
-from userbot.Config import Config
+from DeadlyBot_config import Config
 import asyncio
 
 import requests
 from telethon import functions
 
-from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
+from DeadlyBot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from DeadlyBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
