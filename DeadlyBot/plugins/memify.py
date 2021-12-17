@@ -4,7 +4,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 from DeadlyBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from DeadlyBot.utils.cmdhelp import CmdHelp
+from DeadlyBot.utils.cmds import CmdHelp
 from var import Var
 
 client = borg
