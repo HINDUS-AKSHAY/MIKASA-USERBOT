@@ -122,7 +122,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
               "⚜️DᴇᴀᴅʟʏBᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ⚜️\n\n         **[© DᴇᴀᴅʟʏBᴏᴛ ™](t.me/DEADLY_TECHY)**", 5, link_preview=False
             )
         else:
-            deadly_alert = ""Hᴇʟʟᴏ Tʜᴇʀᴇ, ᴘʟᴇᴀsᴇ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ. © DeadʟʏBᴏᴛ ™"
+            deadly_alert = "Hᴇʟʟᴏ Tʜᴇʀᴇ, ᴘʟᴇᴀsᴇ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ. © DeadʟʏBᴏᴛ ™"
             await event.answer(deadly_alert, cache_time=0, alert=True)
           
     @tgbot.on(
