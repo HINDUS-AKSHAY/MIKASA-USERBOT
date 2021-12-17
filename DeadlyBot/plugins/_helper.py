@@ -3,8 +3,6 @@ import asyncio
 
 import requests
 from telethon import functions
-
-from DeadlyBot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from DeadlyBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
@@ -12,7 +10,7 @@ from DeadlyBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 async def _(event):
     if event.fwd_from:
         return
-    tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
+    tgbotusername = Config.BOT_USERNAME
     input_str = event.pattern_match.group(1)
     if tgbotusername is not None or deadly_input == "text":
         results = await event.client.inline_query(tgbotusername, "@DEADLY_TECHY")
