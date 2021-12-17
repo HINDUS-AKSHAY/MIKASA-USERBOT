@@ -2,8 +2,7 @@ import os
 import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
-
-from DeadlyBot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from . import *
 from DeadlyBot.utils.cmds import CmdHelp
 from var import Var
 
