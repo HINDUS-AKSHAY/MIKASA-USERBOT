@@ -30,7 +30,7 @@ async def _(event):
           await event.edit(input_str + " is not a valid plugin!")
 
 
-@bot.on(sudo_cmd(allow_sudo=True, pattern="help ?(.*)"))
+@bot.on(sudo_cmd(pattern="help$", allow_sudo=True))
 async def info(event):
     if event.fwd_from:
         return
