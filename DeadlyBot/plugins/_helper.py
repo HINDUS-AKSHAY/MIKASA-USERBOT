@@ -1,6 +1,6 @@
 from DeadlyBot_config import Config
 import asyncio
-
+from . import *
 import requests
 from telethon import functions
 
