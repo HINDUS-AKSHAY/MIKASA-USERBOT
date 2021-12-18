@@ -78,7 +78,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@DeadlyBot_SUPPORT",
-                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [DeadlyBot.](https://t.me/DeadlyBot_SUPPORT)\nYou can know more about me from the links given below 👇**""",
+                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [DeadlyBot.](https://t.me/Deadly_Userbot)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/DeadlyBot_SUPPORT"),
