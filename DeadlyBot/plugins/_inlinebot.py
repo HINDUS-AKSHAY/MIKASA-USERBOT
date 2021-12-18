@@ -10,7 +10,7 @@ from DeadlyBot import *
 from DeadlyBot.utils.cmds import *
 from DeadlyBot_config import Config
 
-DeadlyBot_help_pic = Config.HELP_PIC
+DeadlyBot_help_pic = Config.ALIVE_PIC
 DeadlyBot_row = Config.BUTTONS_IN_HELP
 DeadlyBot_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
