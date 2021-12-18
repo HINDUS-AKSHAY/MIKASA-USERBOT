@@ -115,7 +115,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             link_preview=True,
         )
         
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
+
+    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
