@@ -29,6 +29,8 @@ class Development(Config):
   # and type /id and paste that id here.
   # replace that -100 with that group id.
   LOGGER_ID = -100
+   
+  ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
   # Custom Command Handler. 
   HANDLER = "."
