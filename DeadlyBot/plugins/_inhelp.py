@@ -18,7 +18,7 @@ deadly_emoji = Config.EMOJI_IN_HELP
 # DeadlyGhouls
 
 def button(page, modules):
-    Row = deadly_row
+    Row = Config.BUTTONS_IN_HELP
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
