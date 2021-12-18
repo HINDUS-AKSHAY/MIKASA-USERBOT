@@ -10,9 +10,9 @@ from DeadlyBot import *
 from DeadlyBot.utils.cmds import *
 from DeadlyBot_config import Config
 
-DeadlyBot_help_pic = Config.ALIVE_PIC
-DeadlyBot_row = Config.BUTTONS_IN_HELP
-DeadlyBot_emoji = Config.EMOJI_IN_HELP
+Deadly_help_pic = Config.ALIVE_PIC
+Deadly_row = Config.BUTTONS_IN_HELP
+Deadly_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
 # DeadlyBot
 
@@ -38,13 +38,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏰᎯᏣᏦ {DeadlyBot_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"◀️ ᏰᎯᏣᏦ {Deadly_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{DeadlyBot_emoji} ❌ {DeadlyBot_emoji}•", data="close"
+               f"•{Deadly_emoji} ❌ {Deadly_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{DeadlyBot_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{Deadly_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -63,7 +63,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running DeadlyBot**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running DeadlyBot**[⚡🔥]({Deadly_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=True,
             )
@@ -78,17 +78,17 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@DeadlyBot_SUPPORT",
-                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [DeadlyBot.](https://t.me/Deadly_Userbot)\nYou can know more about me from the links given below 👇**""",
+                text=f"""**Hey![🤗]({Deadly_help_pic}) This is [DeadlyBot.](https://t.me/Deadly_Userbot)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/DeadlyBot_SUPPORT"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Deadly_Userbot"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/REBEL_BOT_CHATING"
+                            "⚡ GROUP ⚡", "https://t.me/Deadly_Userbot"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "🔰 REPO 🔰", "https://github.com/REBEL75/DeadlyBotOP"),
+                            "🔰 REPO 🔰", "https://github.com/DEADLY-FIGHTERS/MIKASA-USERBOT"),
                         custom.Button.url
                     (
                             "🔰 TUTORIAL 🔰", ""
@@ -110,7 +110,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF DeadlyBot[⚡🔥]({REBEL_help_pic})[.](https://t.me/DeadlyBot_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF DeadlyBot[⚡🔥]({Deadly_help_pic})[.](https://t.me/Deadly_userbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
@@ -120,11 +120,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
-              f"⚜️DeadlyBot Menu Provider Is now Closed[⚜️]({DeadlyBot_help_pic})\n\n         **[© DeadlyBot ™](t.me/DeadlyBot_SUPPORT)**[⚡🔥]({DeadlyBot_help_pic})", 5, link_preview=True
+              f"⚜️DeadlyBot Menu Provider Is now Closed[⚜️]({DeadlyBot_help_pic})\n\n         **[© DeadlyBot ™](t.me/Deadly_userbot)**[⚡🔥]({Deadly_help_pic})", 5, link_preview=True
             )
         else:
             DeadlyBot_alert = "HELLO THERE. PLEASE MAKE YOUR OWN DeadlyBot AND USE. © DeadlyBot ™"
-            await event.answer(DeadlyBot_alert, cache_time=0, alert=True)
+            await event.answer(Deadly_alert, cache_time=0, alert=True)
           
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
