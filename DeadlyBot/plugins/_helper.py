@@ -3,9 +3,9 @@ import asyncio
 
 import requests
 from telethon import functions
-
-from DeadlyBot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from . import *
+
+ALIVE_NAME = Config.YOUR_NAME
 
 @bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
 async def yardim(event):
