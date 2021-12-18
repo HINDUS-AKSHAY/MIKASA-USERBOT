@@ -59,7 +59,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@MafiaBot_Support":
+        if event.query.user_id == bot.uid and query == "@DEADLY_USERBOT":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
@@ -78,7 +78,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         elif event.text=='':
             result = builder.article(
-                "@MafiaBot_Support",
+                "@DEADLY_USERBOT",
                 text="""**Hey! This is [Dᴇᴀᴅʟʏ Bᴏᴛ](https://t.me/deadly_userbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
@@ -104,7 +104,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Hᴇʏ Tʜᴇʀᴇ Pʟᴇᴀsᴇ Mᴀᴋᴇ Uʀ Oᴡɴ Dᴇᴀᴅʟʏ  Bᴏᴛ Aɴᴅ Usᴇ ..Dᴏɴᴛ Usᴇ Mɪɴᴇ      DDᴇᴀᴅʟʏBᴏt ™",
+                "Hᴇʏ Tʜᴇʀᴇ Pʟᴇᴀsᴇ Mᴀᴋᴇ Uʀ Oᴡɴ Dᴇᴀᴅʟʏ  Bᴏᴛ Aɴᴅ Usᴇ ..Dᴏɴᴛ Usᴇ Mɪɴᴇ      DᴇᴀᴅʟʏBᴏt ™",
                 cache_time=0,
                 alert=True,
             )
@@ -123,8 +123,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
               "⚜️ Dᴇᴀᴅʟʏ Bᴏᴛ Mᴇɴᴜ Pʀᴏᴠɪᴅᴇʀ Is Cʟᴏsᴇᴅ ⚜️\n\n         **[⭕️ DᴇᴀᴅʟʏBᴏᴛ™](https://t.me/DEADLY_USERBOT)", 5, link_preview=False
             )
         else:
-            mafia_alert = "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. ©  ™"
-            await event.answer(mafia_alert, cache_time=0, alert=True)
+            deadly_alert = "Hᴇʟʟᴏ Tʜᴇʀᴇ Pʟᴢ Mᴀᴋᴇ Uʀ Oᴡɴ DᴇᴀᴅʟʏBᴏᴛ Aɴᴅ Usᴇ Dᴏɴᴛ Usᴇ Mɪɴᴇ Bᴏᴛ. ©  ™"
+            await event.answer(deadly_alert, cache_time=0, alert=True)
                             
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
