@@ -8,8 +8,8 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from DeadlyBot import *
 from DeadlyBot.cmdhelp import *
-from DeadlyBot.utils import *
-from DeadlyBot.Config import Config
+from DeadlyBot.utils.cmds import *
+from DeadlyBot_config import Config
 
 DeadlyBot_help_pic = Config.HELP_PIC
 DeadlyBot_row = Config.BUTTONS_IN_HELP
