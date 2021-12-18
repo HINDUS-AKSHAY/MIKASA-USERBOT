@@ -91,7 +91,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                             "🔰 REPO 🔰", "https://github.com/DEADLY-FIGHTERS/MIKASA-USERBOT"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", ""
+                            "🔰 TUTORIAL 🔰", "https://t.me/deadly_userbot"
                     )
                     ],
                 ],
