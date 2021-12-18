@@ -52,13 +52,13 @@ def button(page, modules):
     # Changing this line may give error in bot as i added some special cmds in DeadlyBot channel to get this module work...
 
     modules = CMD_HELP
-if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
+if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(InlineQuery)  # pylint:disable=E0602
     async def inline_handler(event):
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@DeadlyBot_SUPPORT":
+        if event.query.user_id == bot.uid and query == "@Deadly_Userbot":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
