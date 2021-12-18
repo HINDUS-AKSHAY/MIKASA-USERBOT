@@ -1,12 +1,11 @@
-from DeadlyBot.Config import Config
+from DeadlyBot_config import Config
 import asyncio
 
 import requests
 from telethon import functions
 
 from DeadlyBot import ALIVE_NAME, CMD_LIST, SUDO_LIST
-from DeadlyBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-
+from . import *
 
 @bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
 async def yardim(event):
