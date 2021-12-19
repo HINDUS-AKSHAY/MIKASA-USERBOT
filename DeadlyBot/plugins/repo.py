@@ -6,8 +6,7 @@ import requests
 from cowpy import cow
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
-
-from DeadlyBot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from . import *
 
 
 @bot.on(admin_cmd(pattern=f"repo", outgoing=True))
