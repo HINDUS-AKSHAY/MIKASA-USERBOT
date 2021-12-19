@@ -162,7 +162,7 @@ async def load(event):
 CmdHelp("core").add_command(
   "install", "<reply to a .py file>", "Installs the replied python file if suitable to alive's codes."
 ).add_command(
-  "uninstall", "<plugin name>", "Uninstalls the given plugin from ∂єα∂ℓу кααℓ Bσт. To get that again do .restart", "uninstall alive"
+  "uninstall", "<plugin name>", "Uninstalls the given plugin from ∂єα∂ℓу ∂αηαν Bσт. To get that again do .restart", "uninstall alive"
 ).add_command(
   "load", "<plugin name>", "Loades the unloaded plugin to your userbot", "load alive"
 ).add_command(
@@ -170,7 +170,7 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in DeadlyBot."
+  "cmds", None, "Gives out the list of modules in Deadly Kaal Bot."
 ).add_warning(
   "❌ Install External Plugin On Your Own Risk. We won't help if anything goes wrong after installing a plugin."
 ).add()
