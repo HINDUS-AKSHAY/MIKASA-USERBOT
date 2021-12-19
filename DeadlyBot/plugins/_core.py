@@ -51,7 +51,7 @@ async def send(event):
     message_id = event.message.id
     thumb = deadly_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**• Pʟᴜɢɪɴ Nᴀᴍᴇ ➪** `{input_str}`\n**• Uᴘʟᴏᴀᴅᴇᴅ Bʏ ➪** {deadly_mention}\n\n⚡ **[ʟɛɢɛռɖǟʀʏ ǟʄ ɖɛǟɖʟʏ ɮօȶ]({chnl_link})** ⚡"
+    omk = f"**• Pʟᴜɢɪɴ Nᴀᴍᴇ ➪** `{input_str}`\n**• Uᴘʟᴏᴀᴅᴇᴅ Bʏ ➪** {deadly_mention}\n\n⚡ **[Lᴇɢᴇɴᴅʀʏ Aғ Dᴇᴀᴅʟʏ Dᴀɴᴀᴠ Bᴏᴛ]({chnl_link})** ⚡"
     the_plugin_file = "./DeadlyBot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
@@ -62,7 +62,7 @@ async def send(event):
             force_document=True,
             allow_cache=False,
             reply_to=message_id,
-        )
+        )            
         await event.delete()
     else:
         await eod(event, "File not found..... Kek")
@@ -170,7 +170,7 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in Deadly Kaal Bot."
+  "cmds", None, "Gives out the list of modules in Deadly Danav Bot."
 ).add_warning(
   "❌ Install External Plugin On Your Own Risk. We won't help if anything goes wrong after installing a plugin."
 ).add()
