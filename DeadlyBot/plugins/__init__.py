@@ -41,17 +41,17 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.MY_CHANNEL or "deadly_kaal_bot"
-my_group = Config.MY_GROUP or "deadly_kaal_support"
+my_channel = Config.MY_CHANNEL or "deadly_danav_bot"
+my_group = Config.MY_GROUP or "deadly_danav_support"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
     my_group = my_group.replace("@", "")
 
-chnl_link = "https://t.me/deadly_kaal_bot"
-deadly_channel = f"[†hê ∂єα∂ℓу кααℓ Bσт]({chnl_link})"
-grp_link = "https://t.me/deadly_kaal_support"
-deadly_grp = f"[∂єα∂ℓу кααℓ Bσт Group]({grp_link})"
+chnl_link = "https://t.me/deadly_danav_bot"
+deadly_channel = f"[†hê ∂єα∂ℓу ∂αηαν Bσт]({chnl_link})"
+grp_link = "https://t.me/deadly_danav_support"
+deadly_grp = f"[∂єα∂ℓу ∂αηαν Bσт Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
