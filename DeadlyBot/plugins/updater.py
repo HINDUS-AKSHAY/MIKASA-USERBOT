@@ -92,7 +92,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit(
-        "✅ Successfully updated ∂єα∂ℓу кααℓ Bσт!\n\nBot is restarting please wait for a minute."
+        "✅ Successfully updated ∂єα∂ℓу ∂αηαν Bσт!\n\nBot is restarting please wait for a minute."
     )
     args = [sys.executable, "-m", "DeadlyBot"]
     os.execle(sys.executable, *args, os.environ)
@@ -150,7 +150,7 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if changelog == "" and not force_update:
         await event.edit(
-            "\n**😎 ∂єα∂ℓу кααℓ Bσт is UP-TO-DATE.**"
+            "\n**😎 ∂єα∂ℓу ∂αηαν Bσт is UP-TO-DATE.**"
             f"\n\n**Version :**  {deadly_ver}"
             f"\n**Owner :**  {deadly_mention}"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
@@ -163,7 +163,7 @@ async def upstream(event):
 
     if force_update:
         await event.edit(
-            "`Force-Updating ∂єα∂ℓу кααℓ Bσт. Please wait...`"
+            "`Force-Updating ∂єα∂ℓу ∂αηαν Bσт. Please wait...`"
         )
     if conf == "now":
         await event.edit("`Update In Progress! Please Wait....`")
@@ -216,7 +216,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             await asyncio.sleep(5)
             return await event.delete()
-        await event.edit(f"**Your ∂єα∂ℓу кααℓ Bσт Is UpToDate**\n\n**Version :**  __{deadly_ver}__\n**Oɯɳҽɾ :**  {deadly_mention}")
+        await event.edit(f"**Your ∂єα∂ℓу ∂αηαν Bσт Is UpToDate**\n\n**Version :**  __{deadly_ver}__\n**Oɯɳҽɾ :**  {deadly_mention}")
     else:
         await event.edit("**Please set up**  `HEROKU_API_KEY`  **from heroku to update!**")
     return
@@ -226,7 +226,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 @bot.on(sudo_cmd(pattern="update build$", allow_sudo=True))
 async def upstream(event):
     event = await edit_or_reply(event, "`Hard-Update In Progress... \nPlease wait until docker build is finished...`")
-    off_repo = "https://github.com/TEAM-MISAKA/MISAKA-BOT"
+    off_repo = "https://github.com/DEADLY-FIGHTERS/MISAKA-USERBOT"
     os.chdir("/app")
     git_deadly = f"rm -rf .git"
     try:
@@ -256,7 +256,7 @@ async def upstream(event):
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    await event.edit(f"**∂єα∂ℓу кααℓ Bσт Docker Build In Progress... Type** `{hl}ping`  **after 5 mins to check if Bot is working!**")
+    await event.edit(f"**∂єα∂ℓу ∂αηαν Bσт Docker Build In Progress... Type** `{hl}ping`  **after 5 mins to check if Bot is working!**")
     await deploy(event, repo, ups_rem, ac_br, txt)
 
 
@@ -267,7 +267,7 @@ CmdHelp("update").add_command(
 ).add_command(
   "update build", None, "Hard-Update Your ∂єα∂ℓу кααℓ Bσт. This won't take you back to your previous deploy. This will be triggered even if there is no changelog."
 ).add_info(
-  "∂єα∂ℓу кααℓ Bσт Updater."
+  "∂єα∂ℓу ∂αηαν Bσт Updater."
 ).add_warning(
   "✅ Harmless Module."
 ).add()
