@@ -21,7 +21,7 @@ async def deadly_bot(bot_token):
         bot.me = await bot.get_me()
         bot.uid = telethon.utils.get_peer_id(bot.me)
     except Exception as e:
-        LOGS.error(f"DEADLY_KAAL_SESSION - {str(e)}")
+        LOGS.error(f"DEADLY_DANAV_SESSION - {str(e)}")
         sys.exit()
 
 
@@ -37,9 +37,9 @@ else:
                 "BOT_TOKEN", api_id=Config.APP_ID, api_hash=Config.API_HASH
             ).start(bot_token=Config.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("🔰 DEADLY BOT KO START KR RHE HAI DADA 🔰")
+            LOGS.info("🔰 DEADLY DANAV  BOT KO START KR RHE HAI DADA 🔰")
             bot.loop.run_until_complete(deadly_bot(Config.BOT_USERNAME))
-            LOGS.info("🔥 DEADLY KAAL BOT STARTUP COMPLETE 🔥 AB BASS PLUGINS DAALNA HE WAIT KRO 😂😂🔥")
+            LOGS.info("🔥 DEADLY DANAV BOT STARTUP COMPLETE 🔥 AB BASS PLUGINS DAALNA HE WAIT KRO 😂😂🔥")
         else:
             bot.start()
     except Exception as e:
@@ -77,7 +77,7 @@ LOGS.info("Starting Bot Mode !")
 tbot.start()
 LOGS.info("⚡ YOUR BOT IS NOW READY BABE ⚡")
 LOGS.info(
-    "CONGRATULATIONS 🥳🥳🎊🎊 YOUR DEADLY KAAL BOT IS DEPLOYED 🎊 ... NOW TYPE .ping OR .alive TO CHECK OUR AMAZING BOT 🥳🔥 IF U HAVE ANY PROBLEM THEN JOIN @DEADLY_KAAL_BOT"
+    "CONGRATULATIONS 🥳🥳🎊🎊 YOUR DEADLY DANAV BOT IS DEPLOYED 🎊 ... NOW TYPE .ping OR .alive TO CHECK OUR AMAZING BOT 🥳🔥 IF U HAVE ANY PROBLEM THEN JOIN @DEADLY_DANAV_BOT"
 )
 
 # that's life...
@@ -87,15 +87,15 @@ async def deadly_is_on():
             await bot.send_file(
                 Config.LOGGER_ID,
                 DEADLY_PIC,
-                caption=f"#START \n\nDeployed ∂єα∂ℓу кααℓ Bσт Successfully\n\n**∂єα∂ℓу кααℓ Bσт - {deadlyver}**\n\nType `{hl}ping` or `{hl}alive` to check! \n\nJoin [∂єα∂ℓу кααℓ Bσт Channel](t.me/deadly_kaal_bot) for Updates & [∂єα∂ℓу кααℓ Bσт Chat](t.me/deadly_kaal_support) for any query regarding ∂єα∂ℓу кααℓ Bσт",
+                caption=f"#START \n\nDeployed ∂єα∂ℓу ∂αηαν Bσт Successfully\n\n**∂єα∂ℓу ∂αηαν Bσт - {deadlyver}**\n\nType `{hl}ping` or `{hl}alive` to check! \n\nJoin [∂єα∂ℓу ∂αηαν Bσт Channel](t.me/deadly_danav_bot) for Updates & [∂єα∂ℓу ∂αηαν Bσт Chat](t.me/deadly_danav_support) for any query regarding ∂єα∂ℓу ∂αηαν Bσт",
             )
     except Exception as e:
         LOGS.info(str(e))
 
 # Join DeadlyBot Channel after deploying 🤐😅
     try:
-         await bot(JoinChannelRequest("@deadly_kaal_bot"))
-         await bot(JoinChannelRequest("@deadly_kaAL_SUPPORT"))
+         await bot(JoinChannelRequest("@deadly_danav_bot"))
+         await bot(JoinChannelRequest("@deadly_danav_SUPPORT"))
          await bot(JoinChannelRequest("@deadly_FIGHTERS"))
     except BaseException:
         pass
