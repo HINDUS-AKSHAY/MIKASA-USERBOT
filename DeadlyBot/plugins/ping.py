@@ -17,7 +17,7 @@ async def pong(deadly):
     )
 
 CmdHelp("ping").add_command(
-  "ping", None, "Checks the ping speed of your ∂єα∂ℓу кααℓ Bσт"
+  "ping", None, "Checks the ping speed of your ∂єα∂ℓу ∂αηαν Bσт"
 ).add_warning(
   "✅ Harmless Module"
 ).add()
