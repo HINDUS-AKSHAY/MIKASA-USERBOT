@@ -57,7 +57,7 @@ async def re(deadly):
     if HEROKU_API_KEY:
         await restart(event)
     else:
-        await event.edit("Please Set Your `HEROKU_API_KEY` to restart ∂єα∂ℓу кααℓ Bσт")
+        await event.edit("Please Set Your `HEROKU_API_KEY` to restart ∂єα∂ℓу ∂αηαν Bσт")
 
 
 @bot.on(deadly_cmd(pattern="shutdown$"))
@@ -67,7 +67,7 @@ async def down(deadly):
         return
     event = await eor(deadly, "`Turing Off Heroku Dynos...`")
     await asyncio.sleep(2)
-    await event.edit("**[ ⚠️ ]** \n**∂єα∂ℓу кααℓ Bσт Dynos is now turned off. Manually turn it on to start again.**")
+    await event.edit("**[ ⚠️ ]** \n**∂єα∂ℓу ∂αηαν Bσт Dynos is now turned off. Manually turn it on to start again.**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -92,7 +92,7 @@ async def variable(deadly):
         capn = "Saved in LOGGER_ID !!"
         try:
             variable = deadly.pattern_match.group(2).split()[0]
-            if variable in ("DEADLY_KAAL_SESSION", "BOT_TOKEN", "HEROKU_API_KEY"):
+            if variable in ("DEADLY_DANAV_SESSION", "BOT_TOKEN", "HEROKU_API_KEY"):
                 if Config.ABUSE == "ON":
                     await bot.send_file(deadly.chat_id, cjb, caption=cap)
                     await event.delete()
