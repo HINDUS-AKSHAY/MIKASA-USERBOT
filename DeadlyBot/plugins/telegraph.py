@@ -6,7 +6,7 @@ from telegraph import Telegraph, exceptions, upload_file
 
 from . import *
 
-HELL_NAME = Config.YOUR_NAME or "∂єα∂ℓу кααℓ Bσт"
+HELL_NAME = Config.YOUR_NAME or "∂єα∂ℓу ∂αηαν"
 lg_id = Config.LOGGER_ID
 
 telegraph = Telegraph()
