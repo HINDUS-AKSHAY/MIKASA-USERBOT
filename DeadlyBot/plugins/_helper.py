@@ -14,7 +14,7 @@ from . import *
 async def _(event):
     if event.fwd_from:
         return
-    tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
+    tgbotusername = Config.BOT_USERNAME
     input_str = event.pattern_match.group(1)
     if tgbotusername is not None or ustad_input == "text":
         results = await event.client.inline_query(tgbotusername, "@DEADLY_SPAM_BOT")
