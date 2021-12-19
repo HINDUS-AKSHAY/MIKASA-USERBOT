@@ -63,8 +63,8 @@ async def _(event):
         "**Process exited with** `status 143`",
         "**Starting process with command** `python3 -m stdborg`",
         "**State changed from starting to up**",
-        "__INFO:∂єα∂ℓу кααℓ Bσт:Logged in as 557667062__",
-        "__INFO:∂єα∂ℓу кααℓ Bσт:Successfully loaded all plugins__",
+        "__INFO:Deadly Danav Bσт:Logged in as 557667062__",
+        "__INFO:Deadly danav Bσт:Successfully loaded all plugins__",
         "**Build Succeeded**",
     ]
     for i in animation_ttl:
@@ -141,8 +141,8 @@ async def _(event):
         await event.edit(animation_chars[i % 10])
 
 
-@bot.on(deadly_cmd(pattern=r"loveu$", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"loveu$", allow_sudo=True))
+@bot.on(deadly_cmd(pattern=r"ily$", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"ily$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -476,8 +476,8 @@ async def _(event):
 
         await event.edit(animation_chars[i % 10])
         
-@bot.on(deadly_cmd(pattern="istar$", outgoing=True))
-@bot.on(sudo_cmd(pattern="istar$", allow_sudo=True))
+@bot.on(deadly_cmd(pattern="star$", outgoing=True))
+@bot.on(sudo_cmd(pattern="star$", allow_sudo=True))
 async def ammastar(deadlystar):
   
     if deadlystar.fwd_from:
@@ -505,8 +505,8 @@ async def ammastar(deadlystar):
         await deadlystar.edit(animation_chars[i % 11])
     
         
-@bot.on(deadly_cmd(pattern=r"lmoon", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"lmoon", allow_sudo=True))
+@bot.on(deadly_cmd(pattern=r"moon", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"moon", allow_sudo=True))
 async def test(event):
     if event.fwd_from:
         return
@@ -533,8 +533,8 @@ async def test(event):
     )
 
 
-@bot.on(deadly_cmd(pattern=r"hii", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"hii", allow_sudo=True))
+@bot.on(deadly_cmd(pattern=r"hi", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"hi", allow_sudo=True))
 async def hi(event):
     if event.fwd_from:
         return
@@ -1071,7 +1071,7 @@ CmdHelp("animations").add_command(
 ).add_command(
   'fleaveme', None, 'Use and see'
 ).add_command(
-  'loveu', None, 'Use and see'
+  'ily', None, 'Use and see'
 ).add_command(
   'plane', None, 'Use and see'
 ).add_command(
@@ -1113,13 +1113,13 @@ CmdHelp("animations").add_command(
 ).add_command(
   "cheer", None, "Use and see"
 ).add_command(
-  "hii", None, "Use and see"
+  "hi", None, "Use and see"
 ).add_command(
   "city", None, "Use and see"
 ).add_command(
-  "lmoon", None, "Use and see"
+  "moon", None, "Use and see"
 ).add_command(
-  "istar", None, "I am a Superstar⚡✨"
+  "star", None, "I am a Superstar⚡✨"
 ).add_command(
   "switch", None, "Click on the switch to reveal the price✨"
 ).add_command(
